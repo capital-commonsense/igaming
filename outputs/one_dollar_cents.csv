@@ -1,0 +1,11 @@
+scenario,destination,label,group,usd_per_year,cents_per_net_dollar_lost
+central,out_of_state,Out-of-state operators & suppliers,leaves_dc,37864000,56.725
+central,tax_general,DC general fund (tax),dc_public,15306000,22.93
+central,community_impact,DC community impact fund,dc_public,1335000,2.0
+central,tax_treatment,DC addiction services,dc_public,750000,1.124
+central,license_fees,DC license fees,dc_public,160000,0.24
+central,regulatory,Regulating the market (OLG),dc_regulation,1335000,2.0
+central,dealer_take_home,Dealers' pay,dc_private,6874000,10.298
+central,union_dues,Union dues (UNITE HERE Local 25),dc_private,126000,0.189
+central,local_vendors,DC local vendors,dc_private,3000000,4.494
+central,income_tax_comparison,$1 of income tax: DC general fund,dc_public,15901000,100.0

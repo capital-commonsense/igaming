@@ -1,0 +1,7 @@
+ALT TEXT (short, for the image's alt field):
+Bar chart: DC projected $20M from its GambetDC sports-betting app in FY2022 and got $2.7M (13.5%). The CFO projects $15.9M a year net from online casinos.
+
+ALT TEXT (full, for a long description or caption):
+DC's last gambling forecast delivered 13.5 cents on the dollar. Bar chart of projected vs. actual gambling revenue to the District, in millions of dollars. GambetDC sports betting, FY2021: Projected Nov. 2018: $27M; Revised Feb. 2021: $6.2M; Actual: $0 (lost $4M). GambetDC sports betting, FY2022: Projected: $20M; Actual: $2.7M (13.5% of estimate). Online casino (B26-0656), fiscal 2030: Projected (DC CFO): $15.9M; Actual: unknown. GambetDC actuals are net transfers to the District; projections are as reported at the time. The online casino figure is the CFO's projected net impact on District resources. Lawmakers have cited $73M in tax over four years. GambetDC was a lottery-run monopoly, while B26-0656 licenses competing national operators. The chart compares DC's track record and is not a forecast.
+
+Applies to projections_vs_actuals.png and projections_vs_actuals_share.png (and the .svg versions).

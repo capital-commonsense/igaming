@@ -1,0 +1,44 @@
+[project]
+name = "dc-igaming"
+version = "0.1.0"
+description = "Sourced model of the fiscal and social effects of DC online casino legalization (B26-0656)"
+authors = [
+    { name = "Tom Lee", email = "thomas.j.lee@gmail.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "fonttools>=4.68.0",
+    "numpy>=2.5.5",
+    "pypdf>=7.1.1",
+    "pyyaml>=6.0.3",
+    "resvg-py>=0.5.0",
+]
+
+[project.scripts]
+dc-igaming = "dc_igaming.cli:main"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"
+
+[tool.ruff]
+line-length = 110
+target-version = "py312"
+extend-exclude = ["internal", "brand_kit"]
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B", "UP", "SIM"]
+
+[tool.ruff.lint.per-file-ignores]
+# SVG element strings read better on one line.
+"src/dc_igaming/{diagram,projections,harms,share,claims_doc,alttext}.py" = ["E501"]
+
+[build-system]
+requires = ["uv_build>=0.12.3,<0.13.0"]
+build-backend = "uv_build"
+
+[dependency-groups]
+dev = [
+    "pytest>=9.2.0",
+    "ruff>=0.17.6",
+]

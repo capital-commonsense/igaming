@@ -1,0 +1,152 @@
+# DC iGaming (B26-0656) model parameters.
+#
+# Every number used in an output must trace to an entry here. Each entry has:
+#   value   - the number used by the model
+#   unit    - what the number measures
+#   source  - where it came from (citation, or "assumption: <reasoning>")
+#   status  - verified | reported | assumption
+#               verified   = checked against a primary document (bill, CFO FIS, filing)
+#               reported   = taken from secondary reporting; still needs a primary check
+#               assumption = modeling choice, documented reasoning, no direct source
+#   claims  - (optional) ids in data/claims.yaml whose verbatim quotes back the value.
+#             Required for status "verified" (enforced by tests/test_params.py).
+#
+# The revenue side follows the DC CFO's fiscal impact statement (FIS) on the draft
+# committee print of B26-0656 (Nov. 17, 2026), using FY2030 as the steady-state year.
+
+constants:
+  tax_rate:
+    value: 0.25
+    unit: tax rate on adjusted gross internet gaming revenue (AGR)
+    source: CFO fiscal impact statement on the B26-0656 committee print
+    status: verified
+    claims: [fis_tax_rates, print_tax_rates]
+
+  live_dealer_tax_rate:
+    value: 0.125
+    unit: tax rate on live-dealer AGR (used to check the CFO's implied blended rate)
+    source: CFO fiscal impact statement on the B26-0656 committee print
+    status: verified
+    claims: [fis_tax_rates, print_tax_rates]
+
+  assessment_rate:
+    value: 0.02
+    unit: share of AGR for each of the community impact and regulatory assessments
+    source: CFO fiscal impact statement on the B26-0656 committee print
+    status: verified
+    claims: [fis_community_impact, fis_regulatory_assessment]
+
+  treatment_setaside:
+    value: 750000
+    unit: USD per year, first tax dollars to the Department of Behavioral Health
+    source: CFO fiscal impact statement (D.C. Official Code § 36-681.01)
+    status: verified
+    claims: [fis_setaside]
+
+  union_dues_per_member:
+    value: 1260
+    unit: USD per member per year
+    source: >-
+      UNITE HERE Local 25 2025 Form LM-2 (DOL file no. 506-434), item 21: regular dues
+      $59.92-$105.00 per member per month. Uses the top of the range ($105 x 12), which
+      matches 2025 dues receipts per member ($7,772,376 / 6,101 = $1,274).
+    status: verified
+    claims: [local25_dues_rate_2025, local25_dues_receipts_2025, local25_members_2025]
+
+  dc_population:
+    value: 700000
+    unit: residents (CSV outputs only; not shown in any graphic)
+    source: U.S. Census Bureau population estimate (rounded)
+    status: reported
+
+  fy26_individual_income_tax:
+    value: 3.699357e9
+    unit: USD, FY2026 DC individual income tax estimate
+    source: >-
+      DC OCFO June 2026 revenue estimate letter, Table 1 ($ in thousands): FY2026
+      Individual Income 3,699,357.
+    status: verified
+    claims: [iit_fy2026]
+
+scenarios:
+  central:
+    description: >-
+      CFO fiscal impact statement, FY2030 (steady state: after the FY2028 one-time
+      operator license fees). Dealer pay and vendor spending are assumptions.
+    tax_revenue:
+      value: 16056000
+      unit: USD per year, tax on gaming revenue (FY2030)
+      source: CFO fiscal impact statement, financial plan table
+      status: verified
+      claims: [fis_tax_fy2030]
+    community_impact:
+      value: 1335000
+      unit: USD per year, community impact assessment (FY2030)
+      source: CFO fiscal impact statement, financial plan table
+      status: verified
+      claims: [fis_community_impact_fy2030]
+    regulatory_assessment:
+      value: 1335000
+      unit: USD per year, regulatory assessment (FY2030)
+      source: CFO fiscal impact statement, financial plan table
+      status: verified
+      claims: [fis_regulatory_fy2030]
+    olg_regulatory_costs:
+      value: 1335000
+      unit: USD per year, Office of Lottery and Gaming regulatory costs (FY2030)
+      source: CFO fiscal impact statement, financial plan table
+      status: verified
+      claims: [fis_olg_costs_fy2030]
+    license_fees:
+      value: 160000
+      unit: USD per year, license fee revenue (FY2030)
+      source: CFO fiscal impact statement, financial plan table
+      status: verified
+      claims: [fis_license_fy2030]
+    lottery_loss:
+      value: 1130000
+      unit: USD per year, decrease in lottery earnings (FY2030)
+      source: CFO fiscal impact statement, financial plan table
+      status: verified
+      claims: [fis_lottery_loss_fy2030]
+    sports_wagering_loss:
+      value: 520000
+      unit: USD per year, decrease in sports wagering taxes (FY2030)
+      source: CFO fiscal impact statement, financial plan table
+      status: verified
+      claims: [fis_sports_loss_fy2030]
+    hold:
+      value: 0.035
+      unit: AGR / handle (CSV outputs only; not shown in any graphic)
+      source: "assumption: player-friendly vs. PA online slots ~3.8% (PGCB, March 2026)"
+      status: assumption
+    jobs:
+      value: 100
+      unit: union live-dealer jobs in DC
+      source: Human Services Committee estimate (Axios DC, Nov 18 2026)
+      status: reported
+      claims: [igaming_union_jobs, fis_live_dealer_requirements]
+    comp_per_job:
+      value: 70000
+      unit: USD per job per year, fully loaded
+      source: "assumption: typical casino dealer pay with benefits"
+      status: assumption
+    local_vendor_spend:
+      value: 3.0e6
+      unit: USD per year to DC certified local businesses
+      source: >-
+        assumption. The committee print requires 35% of an operator's DC-related operating
+        budget to go to certified business enterprises, but the budget's size isn't
+        specified and waivers are deemed approved after 30 days (fis_cbe_requirement).
+      status: assumption
+      claims: [fis_cbe_requirement]
+
+sensitivity:
+  hold:
+    values: [0.030, 0.035, 0.040]
+    source: PGCB monthly iGaming reports (3-4% online slots hold)
+  market_multiplier:
+    values: [0.135, 0.25, 0.5, 0.75, 1.0, 1.5, 2.0, 3.0]
+    source: >-
+      Multiples of the CFO's FY2030 revenue. 0.135 = GambetDC's FY2022 actual vs.
+      projection ($2.7M vs. ~$20M).

@@ -1,0 +1,19 @@
+parameter,value,unit,status,source
+constants.tax_rate,0.25,tax rate on adjusted gross internet gaming revenue (AGR),verified,CFO fiscal impact statement on the B26-0656 committee print
+constants.live_dealer_tax_rate,0.125,tax rate on live-dealer AGR (used to check the CFO's implied blended rate),verified,CFO fiscal impact statement on the B26-0656 committee print
+constants.assessment_rate,0.02,share of AGR for each of the community impact and regulatory assessments,verified,CFO fiscal impact statement on the B26-0656 committee print
+constants.treatment_setaside,750000.0,"USD per year, first tax dollars to the Department of Behavioral Health",verified,CFO fiscal impact statement (D.C. Official Code § 36-681.01)
+constants.union_dues_per_member,1260.0,USD per member per year,verified,"UNITE HERE Local 25 2025 Form LM-2 (DOL file no. 506-434), item 21: regular dues $59.92-$105.00 per member per month. Uses the top of the range ($105 x 12), which matches 2025 dues receipts per member ($7,772,376 / 6,101 = $1,274)."
+constants.dc_population,700000.0,residents (CSV outputs only; not shown in any graphic),reported,U.S. Census Bureau population estimate (rounded)
+constants.fy26_individual_income_tax,3699357000.0,"USD, FY2026 DC individual income tax estimate",verified,"DC OCFO June 2026 revenue estimate letter, Table 1 ($ in thousands): FY2026 Individual Income 3,699,357."
+scenarios.central.tax_revenue,16056000.0,"USD per year, tax on gaming revenue (FY2030)",verified,"CFO fiscal impact statement, financial plan table"
+scenarios.central.community_impact,1335000.0,"USD per year, community impact assessment (FY2030)",verified,"CFO fiscal impact statement, financial plan table"
+scenarios.central.regulatory_assessment,1335000.0,"USD per year, regulatory assessment (FY2030)",verified,"CFO fiscal impact statement, financial plan table"
+scenarios.central.olg_regulatory_costs,1335000.0,"USD per year, Office of Lottery and Gaming regulatory costs (FY2030)",verified,"CFO fiscal impact statement, financial plan table"
+scenarios.central.license_fees,160000.0,"USD per year, license fee revenue (FY2030)",verified,"CFO fiscal impact statement, financial plan table"
+scenarios.central.lottery_loss,1130000.0,"USD per year, decrease in lottery earnings (FY2030)",verified,"CFO fiscal impact statement, financial plan table"
+scenarios.central.sports_wagering_loss,520000.0,"USD per year, decrease in sports wagering taxes (FY2030)",verified,"CFO fiscal impact statement, financial plan table"
+scenarios.central.hold,0.035,AGR / handle (CSV outputs only; not shown in any graphic),assumption,"assumption: player-friendly vs. PA online slots ~3.8% (PGCB, March 2026)"
+scenarios.central.jobs,100.0,union live-dealer jobs in DC,reported,"Human Services Committee estimate (Axios DC, Nov 18 2026)"
+scenarios.central.comp_per_job,70000.0,"USD per job per year, fully loaded",assumption,assumption: typical casino dealer pay with benefits
+scenarios.central.local_vendor_spend,3000000.0,USD per year to DC certified local businesses,assumption,"assumption. The committee print requires 35% of an operator's DC-related operating budget to go to certified business enterprises, but the budget's size isn't specified and waivers are deemed approved after 30 days (fis_cbe_requirement)."

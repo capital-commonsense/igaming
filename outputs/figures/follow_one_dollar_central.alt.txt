@@ -1,0 +1,7 @@
+ALT TEXT (short, for the image's alt field):
+Diagram: of each $1 DC residents would lose to online casinos, 57 cents leaves DC and the city nets 24 cents. Every $1 of income tax goes to DC.
+
+ALT TEXT (full, for a long description or caption):
+For every dollar DC residents lose, the city nets 24 cents. A flow diagram splits $1 lost by DC players, net of winnings, into where it would go under B26-0656, using the DC Chief Financial Officer's estimate for fiscal 2030. The splits are: Out-of-state operators and suppliers, 57 cents; DC general fund (tax), 22.9 cents; DC community impact fund, 2 cents; DC addiction services, 1.1 cents; DC license fees, 0.24 cents; Regulating the market (OLG), 2 cents; Dealers' pay, 10.3 cents; Union dues (UNITE HERE Local 25), 0.19 cents; DC local vendors, 4.5 cents. The slices that reach the city's budget are highlighted in red and total 26.3 cents: DC general fund (tax), DC community impact fund, DC addiction services, DC license fees. The regulatory assessment only pays for regulating the market. The CFO also expects the city to lose 2.5 cents per $1 in lottery and sports-betting revenue, so the city nets 23.8 cents per $1, or $15.90M a year. Beside it, a second bar shows that all of $1 paid in income tax goes to DC; raising the same amount through income tax would take a 0.43% increase. Dealer pay, vendor spending and the 100-job count are assumptions explained in the fine print.
+
+Applies to follow_one_dollar_central.png and follow_one_dollar_central_share.png (and the .svg versions).

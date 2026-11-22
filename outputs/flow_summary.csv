@@ -1,0 +1,17 @@
+scenario,metric,value
+central,handle_usd,1907142857
+central,winnings_paid_back_usd,1840392857
+central,net_player_loss_usd,66750000
+central,tax_usd,16056000
+central,out_of_state_usd,37864000
+central,blended_tax_rate,0.24054
+central,implied_live_dealer_share,0.0757
+central,public_receipts_usd,18886000
+central,net_impact_usd,15901000
+central,net_impact_cents_per_net_dollar,23.82
+central,retained_cents_per_net_dollar,43.27
+central,net_losses_per_resident_usd,95.36
+central,tax_per_resident_usd,22.94
+central,net_losses_per_union_job_usd,667500
+central,income_tax_equiv_pct,0.43
+central,feasible,True

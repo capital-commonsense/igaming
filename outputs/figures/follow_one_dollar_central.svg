@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1287.8" width="1600" height="1287.8" role="img" aria-label="For every dollar DC residents lose, the city nets 24 cents">
+<title>For every dollar DC residents lose, the city nets 24 cents</title>
+<defs><linearGradient id="offEdge" x1="0" x2="1" y1="0" y2="0"><stop offset="0" stop-color="#111111" stop-opacity="0.88"/><stop offset="1" stop-color="#111111" stop-opacity="0"/></linearGradient></defs>
+<rect width="1600" height="1287.8" fill="#FFFFFF"/>
+<text x="100" y="116" font-family="'Newsreader 72pt', Newsreader, Georgia, serif" font-weight="700" font-size="50" fill="#111111">For every dollar DC residents lose, the city nets 24 cents</text>
+<text x="100" y="166" font-size="23" fill="#5B5B5B" font-family="'IBM Plex Sans', Arial, sans-serif">Where DC residents’ net online casino losses would go under B26-0656, cents per $1 (DC CFO estimate for fiscal 2030)</text>
+<text x="100" y="262" font-size="22" font-weight="600" fill="#111111" font-family="'IBM Plex Sans', Arial, sans-serif">$1 lost by DC players, net of winnings</text>
+<text x="1210" y="262" font-size="22" font-weight="600" fill="#111111" font-family="'IBM Plex Sans', Arial, sans-serif">Or: $1 of income tax</text>
+<line x1="1160" x2="1160" y1="238" y2="880" stroke="#DDDCD8" stroke-width="2"/>
+<rect x="200" y="310" width="24" height="500" fill="#111111"/>
+<text x="184" y="582" font-family="'Newsreader 72pt', Newsreader, Georgia, serif" font-weight="700" font-size="64" fill="#111111" text-anchor="end">$1</text>
+<g id="ribbons">
+<path d="M224,310 C472,310 472,262 720,262 L720,545.63 C472,545.63 472,593.63 224,593.63 Z" fill="#111111" fill-opacity="0.88" data-key="out_of_state"/>
+<path d="M224,593.63 C472,593.63 472,567.63 720,567.63 L720,682.28 C472,682.28 472,708.28 224,708.28 Z" fill="#D43D29" fill-opacity="1" data-key="tax_general"/>
+<path d="M224,708.28 C472,708.28 472,688.28 720,688.28 L720,698.28 C472,698.28 472,718.28 224,718.28 Z" fill="#D43D29" fill-opacity="1" data-key="community_impact"/>
+<path d="M224,718.28 C472,718.28 472,704.28 720,704.28 L720,709.9 C472,709.9 472,723.9 224,723.9 Z" fill="#D43D29" fill-opacity="1" data-key="tax_treatment"/>
+<path d="M224,723.9 C472,723.9 472,715.9 720,715.9 L720,717.4 C472,717.4 472,725.4 224,725.4 Z" fill="#D43D29" fill-opacity="1" data-key="license_fees"/>
+<path d="M224,725.4 C472,725.4 472,739.4 720,739.4 L720,749.4 C472,749.4 472,735.4 224,735.4 Z" fill="#C9C8C4" fill-opacity="0.9" data-key="regulatory"/>
+<path d="M224,735.4 C472,735.4 472,771.4 720,771.4 L720,822.89 C472,822.89 472,786.89 224,786.89 Z" fill="#8C8B87" fill-opacity="0.55" data-key="dealer_take_home"/>
+<path d="M224,786.89 C472,786.89 472,828.89 720,828.89 L720,830.39 C472,830.39 472,788.39 224,788.39 Z" fill="#8C8B87" fill-opacity="0.55" data-key="union_dues"/>
+<path d="M224,788.39 C472,788.39 472,836.39 720,836.39 L720,858.86 C472,858.86 472,810.86 224,810.86 Z" fill="#8C8B87" fill-opacity="0.55" data-key="local_vendors"/>
+</g>
+<g id="terminals">
+<rect x="720" y="262" width="390" height="283.63" fill="url(#offEdge)" data-key="out_of_state"/>
+<text x="432.32" y="437.81" font-size="76" font-weight="600" data-key="out_of_state" font-family="'IBM Plex Sans', Arial, sans-serif" fill="#FFFFFF" text-anchor="middle">57¢</text>
+<text x="432.32" y="477.81" font-size="26" font-weight="600" font-family="'IBM Plex Sans', Arial, sans-serif" fill="#FFFFFF" text-anchor="middle">leaves DC</text>
+<text x="432.32" y="507.81" font-size="18" font-family="'IBM Plex Sans', Arial, sans-serif" fill="#FFFFFF" text-anchor="middle">out-of-state operators &amp; suppliers</text>
+<rect x="720" y="567.63" width="10" height="114.65" fill="#D43D29" data-key="tax_general"/>
+<text x="815.34" y="633.35" font-size="24" font-weight="600" fill="#D43D29" text-anchor="end" data-key="tax_general" font-family="'IBM Plex Sans', Arial, sans-serif">22.9¢</text>
+<text x="827.34" y="633.35" font-size="20" fill="#5B5B5B" font-family="'IBM Plex Sans', Arial, sans-serif">DC general fund (tax)</text>
+<rect x="720" y="688.28" width="10" height="10" fill="#D43D29" data-key="community_impact"/>
+<polyline points="733.0,693.3 746.0,670.4" fill="none" stroke="#5B5B5B" stroke-width="1"/>
+<text x="815.34" y="678.75" font-size="24" font-weight="600" fill="#D43D29" text-anchor="end" data-key="community_impact" font-family="'IBM Plex Sans', Arial, sans-serif">2¢</text>
+<text x="827.34" y="678.75" font-size="20" fill="#5B5B5B" font-family="'IBM Plex Sans', Arial, sans-serif">DC community impact fund</text>
+<rect x="720" y="704.28" width="10" height="5.62" fill="#D43D29" data-key="tax_treatment"/>
+<polyline points="733.0,707.1 746.0,700.4" fill="none" stroke="#5B5B5B" stroke-width="1"/>
+<text x="815.34" y="708.75" font-size="24" font-weight="600" fill="#D43D29" text-anchor="end" data-key="tax_treatment" font-family="'IBM Plex Sans', Arial, sans-serif">1.1¢</text>
+<text x="827.34" y="708.75" font-size="20" fill="#5B5B5B" font-family="'IBM Plex Sans', Arial, sans-serif">DC addiction services</text>
+<rect x="720" y="715.9" width="10" height="1.5" fill="#D43D29" data-key="license_fees"/>
+<polyline points="733.0,716.6 746.0,730.4" fill="none" stroke="#5B5B5B" stroke-width="1"/>
+<text x="815.34" y="738.75" font-size="24" font-weight="600" fill="#D43D29" text-anchor="end" data-key="license_fees" font-family="'IBM Plex Sans', Arial, sans-serif">0.24¢</text>
+<text x="827.34" y="738.75" font-size="20" fill="#5B5B5B" font-family="'IBM Plex Sans', Arial, sans-serif">DC license fees</text>
+<rect x="720" y="739.4" width="10" height="10" fill="#C9C8C4" data-key="regulatory"/>
+<polyline points="733.0,744.4 746.0,760.4" fill="none" stroke="#5B5B5B" stroke-width="1"/>
+<text x="815.34" y="768.75" font-size="24" font-weight="600" fill="#111111" text-anchor="end" data-key="regulatory" font-family="'IBM Plex Sans', Arial, sans-serif">2¢</text>
+<text x="827.34" y="768.75" font-size="20" fill="#5B5B5B" font-family="'IBM Plex Sans', Arial, sans-serif">Regulating the market (OLG)</text>
+<rect x="720" y="771.4" width="10" height="51.49" fill="#8C8B87" data-key="dealer_take_home"/>
+<polyline points="733.0,797.1 746.0,794.8" fill="none" stroke="#5B5B5B" stroke-width="1"/>
+<text x="815.34" y="803.2" font-size="24" font-weight="600" fill="#111111" text-anchor="end" data-key="dealer_take_home" font-family="'IBM Plex Sans', Arial, sans-serif">10.3¢</text>
+<text x="827.34" y="803.2" font-size="20" fill="#5B5B5B" font-family="'IBM Plex Sans', Arial, sans-serif">Dealers' pay</text>
+<rect x="720" y="828.89" width="10" height="1.5" fill="#8C8B87" data-key="union_dues"/>
+<polyline points="733.0,829.6 746.0,824.8" fill="none" stroke="#5B5B5B" stroke-width="1"/>
+<text x="815.34" y="833.2" font-size="24" font-weight="600" fill="#111111" text-anchor="end" data-key="union_dues" font-family="'IBM Plex Sans', Arial, sans-serif">0.19¢</text>
+<text x="827.34" y="833.2" font-size="20" fill="#5B5B5B" font-family="'IBM Plex Sans', Arial, sans-serif">Union dues (UNITE HERE Local 25)</text>
+<rect x="720" y="836.39" width="10" height="22.47" fill="#8C8B87" data-key="local_vendors"/>
+<polyline points="733.0,847.6 746.0,854.8" fill="none" stroke="#5B5B5B" stroke-width="1"/>
+<text x="815.34" y="863.2" font-size="24" font-weight="600" fill="#111111" text-anchor="end" data-key="local_vendors" font-family="'IBM Plex Sans', Arial, sans-serif">4.5¢</text>
+<text x="827.34" y="863.2" font-size="20" fill="#5B5B5B" font-family="'IBM Plex Sans', Arial, sans-serif">DC local vendors</text>
+</g>
+<g id="income-tax">
+<rect x="1210" y="310" width="24" height="500" fill="#111111"/>
+<path d="M1234,310 C1312,310 1312,310 1390,310 L1390,810 C1312,810 1312,810 1234,810 Z" fill="#D43D29" data-key="income_tax"/>
+<rect x="1390" y="310" width="10" height="500" fill="#D43D29" data-key="income_tax"/>
+<text x="1418" y="554" font-size="40" font-weight="600" fill="#D43D29" data-key="income_tax" font-family="'IBM Plex Sans', Arial, sans-serif">100¢</text>
+<text x="1418" y="586" font-size="20" fill="#5B5B5B" font-family="'IBM Plex Sans', Arial, sans-serif">to DC</text>
+</g>
+<text x="100" y="920" font-size="17" fill="#5B5B5B" font-family="'IBM Plex Sans', Arial, sans-serif">How the money is counted: the $1 is DC players’ combined net loss, meaning everything wagered minus everything paid back as winnings, including to players who finish ahead. That</text>
+<text x="100" y="944.65" font-size="17" fill="#5B5B5B" font-family="'IBM Plex Sans', Arial, sans-serif">equals operators’ adjusted gross revenue, the tax base; the committee print doesn’t count promotional credits as wagers. The CFO’s fiscal 2030 figures imply $66.8M a year (each 2%</text>
+<text x="100" y="969.3" font-size="17" fill="#5B5B5B" font-family="'IBM Plex Sans', Arial, sans-serif">assessment is $1.34M). Every cent is accounted for: the out-of-state share is what remains.</text>
+<text x="100" y="1001.95" font-size="17" fill="#5B5B5B" font-family="'IBM Plex Sans', Arial, sans-serif">What the city gets: a 25% tax (12.5% on live-dealer games; the CFO’s figures imply 24.05% overall), with the first $750K for addiction services; a 2% community impact assessment</text>
+<text x="100" y="1026.6" font-size="17" fill="#5B5B5B" font-family="'IBM Plex Sans', Arial, sans-serif">for debt counseling, domestic-violence services, gambling research and youth tech training; license fees; and a 2% regulatory assessment that only pays for regulating the market. The</text>
+<text x="100" y="1051.25" font-size="17" fill="#5B5B5B" font-family="'IBM Plex Sans', Arial, sans-serif">red slices total 26.3¢. The CFO also projects the city loses $1.65M a year in lottery and sports-betting revenue (2.5¢ per $1), for a net gain of $15.90M: 23.8¢ per $1.</text>
+<text x="100" y="1083.9" font-size="17" fill="#5B5B5B" font-family="'IBM Plex Sans', Arial, sans-serif">Assumes 100 union dealer jobs (the committee’s estimate; the bill requires live-dealer games in a DC studio) at $70K each, fully loaded, and $3.0M a year in DC vendor spending.</text>
+<text x="100" y="1108.55" font-size="17" fill="#5B5B5B" font-family="'IBM Plex Sans', Arial, sans-serif">Raising the same $15.90M through income tax would take a 0.43% increase.</text>
+<text x="100" y="1141.2" font-size="17" fill="#5B5B5B" font-family="'IBM Plex Sans', Arial, sans-serif">Union dues: $105 a month ($1,260 a year) per dealer, the top of the regular dues range ($59.92–$105.00 a month) UNITE HERE Local 25 reported to the U.S. Department of Labor for</text>
+<text x="100" y="1165.85" font-size="17" fill="#5B5B5B" font-family="'IBM Plex Sans', Arial, sans-serif">2025. That matches the local's actual 2025 dues receipts: $7.8M from 6,101 members, or $1,274 each. 100 dealers would pay $126K a year, 0.19¢ of each $1 residents lose.</text>
+<text x="100" y="1198.5" font-size="17" fill="#5B5B5B" font-family="'IBM Plex Sans', Arial, sans-serif">Sources: DC Chief Financial Officer, fiscal impact statement on the B26-0656 committee print (Nov. 18, 2026); committee print racial equity impact assessment; committee jobs</text>
+<text x="100" y="1223.15" font-size="17" fill="#5B5B5B" font-family="'IBM Plex Sans', Arial, sans-serif">estimate via Axios DC (Nov. 18, 2026); UNITE HERE Local 25 2025 LM-2 filing (U.S. Dept. of Labor); DC CFO June 2026 revenue estimate.</text>
+</svg>

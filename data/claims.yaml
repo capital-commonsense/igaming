@@ -1,0 +1,687 @@
+# Claims used in the figures, each tied to a source in data/sources/manifest.yaml.
+#
+# `quotes` are verbatim snippets that must appear in the source's extracted text
+# (after whitespace/quote/ligature normalization). tests/test_claims.py checks every
+# one, so a figure number can't drift from what the source actually says.
+# `value` is what the figure plots or prints.
+
+claims:
+  # ---------------------------------------------------------------- GambetDC record
+  gambetdc_fy2021_projection_2018:
+    value: 27.0e6
+    unit: USD, projected FY2021 sports wagering revenue to DC
+    source: casinoorg_2021
+    quotes:
+      - the $27 million that former DC CFO Jeffrey DeWitt projected for 2021 back in November 2018
+
+  gambetdc_fy2021_projection_2021:
+    value: 6.2e6
+    unit: USD, FY2021 revenue the DC Council expected (Feb. 2021)
+    source: casinoorg_2021
+    quotes:
+      - The DC Council said in February 2021 it expected the platform to bring in $6.2 million for the district
+
+  gambetdc_fy2021_actual:
+    value: 0
+    unit: USD, FY2021 net transfer to DC
+    source: olg_fy21_22
+    quotes:
+      - GambetDC did not provide a net transfer to the District in FY21
+
+  gambetdc_fy2021_loss:
+    value: 4.0e6
+    unit: USD, FY2021 operating loss
+    source: casinoorg_2021
+    quotes:
+      - booked a $4 million loss in its first full year
+
+  gambetdc_fy2022_projection:
+    value: 20.0e6
+    unit: USD, revenue city officials once estimated for 2022
+    source: dcist_2022
+    quotes:
+      - one-tenth of the $20 million city officials once estimated
+
+  gambetdc_fy2022_actual:
+    value: 2.7e6
+    unit: USD, FY2022 net transfer to DC
+    source: olg_fy22_23
+    quotes:
+      - Net transfer to the District of $2.7 million
+
+  # ---------------------------------------------------------------- iGaming projection
+  igaming_committee_estimate:
+    value: 18.25e6
+    unit: USD per year (committee's $73M over four years / 4)
+    source: axios_2026
+    quotes:
+      - sweep up $73 million in new tax revenue over four years
+      - will bring in $73 million in tax revenue over four years (not $500 million over five years)
+
+  igaming_union_jobs:
+    value: 100
+    unit: union live-dealer jobs the committee expects (used in the Sankey)
+    source: axios_2026
+    quotes:
+      - The Human Services Committee believes the online gaming bill will create 100 union jobs
+      - the bill requires actual employees streaming themselves dealing cards to players online
+
+  igaming_other_estimate:
+    value: 50.0e6
+    unit: USD per year, economic analysis cited at the committee markup
+    source: covers_2026
+    quotes:
+      - potentially generating approximately $50 million annually
+
+  # ---------------------------------------------------------------- harms
+  bankruptcy:
+    value: [25, 30]
+    unit: "% increase in likelihood of bankruptcy filing, 3-4 years after online sports betting legalization"
+    source: hollenbeck_2025
+    quotes:
+      - Three to four years after the legalization of online sports gambling
+      - the likelihood of bankruptcy filing increases by as much as 25-30% when compared to pre-treatment levels
+
+  hollenbeck_sample:
+    value: 7.0e6
+    unit: consumers in the UC Consumer Credit Panel (tile label "7M credit files")
+    source: hollenbeck_2025
+    quotes:
+      - a sample of roughly 7 million U.S. adults
+
+  collections:
+    value: 8
+    unit: "% increase in the average amount of debt in collections after online sports betting became legal"
+    source: hollenbeck_2025
+    quotes:
+      - We observe a significant increase in collections when focusing on online accessibility, translating to a roughly 8% average increase
+      - changes in the amount of debt in collection on account
+
+  investment_crowd_out:
+    value: 0.99
+    unit: USD less net investment per $1 of online sports betting
+    source: baker_2024
+    quotes:
+      - $1 of online sports betting reduces net investments by $0.99
+      - robo-advisors that are primarily used for long-term savings
+
+  constrained_households:
+    value: null
+    unit: qualitative
+    source: baker_2024
+    quotes:
+      - credit card debt increases, available credit decreases, and overdraft frequency rises
+
+  ipv:
+    value: [8.5, 9.6]
+    unit: >-
+      % rise in reported intimate partner violence after an NFL home-team upset loss where
+      sports betting is legal (section 5.1, from the Poisson models in Table 1). The paper finds
+      the upset-loss effect is larger where betting is legal (interaction significant at the
+      10% level).
+    source: arnesen_2025
+    quotes:
+      - are higher when sports betting is legal (19% vs. 3.6% increase)
+      - NFL home team upset losses and reported intimate partner violence (IPV)
+      - when sports betting is legal, IPVs increase by 8.5 to 9.6%
+      - legalized gambling increases the impact of upset losses on IPV by 10 percentage points
+      - about 6 to 7 percentage points larger than in states without sports betting
+      - upset loss on IPVs by 4.1 to 6.31 percentage points
+      - states that legalized mobile betting drive our results
+
+  ipv_data:
+    value: null
+    unit: qualitative (tile label "police reports, 2011-2022")
+    source: arnesen_2025
+    quotes:
+      - 2011-2022 crime data from NIBRS
+
+  suicide:
+    value: 15
+    unit: times general-population suicide mortality, people diagnosed with gambling disorder
+    source: karlsson_2018
+    quotes:
+      - a 15-fold increase in suicide mortality
+      - SMR for suicide indicated a 15.1 times increase for men and women 20-74 years of age
+      - Men and women 15.1* [8.7 to 21.6]
+
+  nj_venue_disorder:
+    value: [1.1, 11.3]
+    unit: >-
+      % of past-year gamblers screening as probable disorder (high risk): land-based only vs.
+      online only, New Jersey (Table 28). Tile shows 11.3 / 1.1 rounded down to 10x.
+    source: rutgers_2023
+    quotes:
+      - Table 28. Gambling by Combined Risk Level and Venue
+      - Probable Disorder (High Risk)
+      - Online Only 201 67.9 62 20.9 33 11.3
+      - Land-based Only 872 85.4* 137 13.5 11 1.1
+
+  nj_survey_dates:
+    value: null
+    unit: qualitative (tile label "2020-21 survey")
+    source: rutgers_2023
+    quotes:
+      - The fieldwork for the telephone interviews took place between December 9, 2020, and April 30, 2021
+      - from December 22, 2020, through May 8, 2021
+
+  ct_helpline:
+    value: [311, 583]
+    unit: calls and texts to the CT problem-gambling helpline, Nov. 2020 vs Nov. 2021
+    source: ctmirror_2022
+    quotes:
+      - Calls and texts in those same months went from 311 to 583, an 87% increase
+
+  pa_helpline:
+    value: 50
+    unit: "% of PA 1-800-GAMBLER calls related to online gambling (more than)"
+    source: psu_2026
+    quotes:
+      - with over 50% of calls related to problematic online gambling
+
+  anj_concentration:
+    value: [8.7, 60]
+    unit: >-
+      % of registered players flagged as likely problem gamblers / % of GGR they produce, second
+      half of 2025, online and account-based gambling in France
+    source: anj_2026
+    quotes:
+      - In the second half of 2025, the algorithm identified 600,000 players who are highly likely to be problem gamblers
+      - representing 8.7% of the total population of registered players
+      - accounting for 60% of total GGR
+      - licensed online operators and FDJ and PMU account-based gambling
+
+  # ---------------------------------------------------------------- neighboring states (article)
+  md_sb761_withdrawn:
+    value: null
+    unit: qualitative. Maryland's 2026 internet gaming referendum bill was withdrawn after its hearing was canceled
+    source: mga_2026_sb0761
+    article: "Neighbors: Maryland's 2026 online casino referendum bill was withdrawn"
+    quotes:
+      - Expansion of Commercial Gaming - Internet Gaming Referendum
+      - In the Senate - Withdrawn by Sponsor
+      - 3/10/2026 Action Hearing canceled
+      - 3/13/2026 Action Withdrawn by Sponsor
+
+  md_hb1343_no_vote:
+    value: null
+    unit: >-
+      qualitative. The House online casino bill got a hearing and no further action; its record,
+      retrieved after the session ended, still shows the hearing as its last step. It was also
+      introduced in 2025 as HB 17.
+    source: mga_2026_hb1343
+    article: "Neighbors: Maryland's House online casino bill never got a vote (2025 and 2026)"
+    quotes:
+      - Internet Gaming - Authorization and Implementation
+      - In the House - Hearing 3/05 at 1:00 p.m.
+      - "Introduced in a prior session as: HB0017 Session: 2025 Regular Session"
+
+  md_referendum_required:
+    value: null
+    unit: qualitative. Online casinos in Maryland would need voter approval in a statewide referendum
+    source: casinoorg_2026_md
+    article: "Neighbors: Maryland would need a statewide referendum"
+    quotes:
+      - Such gambling expansion would require voter approval through a statewide ballot referendum
+      - Watson withdrew Senate Bill 761, the proposed internet gaming referendum
+      - The regulatory statute is presumably dead with the shelving of SB761
+
+  va_2026_no_final_vote:
+    value: null
+    unit: qualitative. Virginia's House and Senate passed different online casino bills and took no final vote
+    source: covers_2026_va
+    article: "Neighbors: Virginia's 2026 online casino bill died without a final vote"
+    quotes:
+      - Virginia lawmakers failed to approve online casino legislation before the 2026 session ended
+      - The House and Senate passed separate versions of the bill but could not reconcile differences before the legislature adjourned
+      - there is no longer a route for legal online slots or table games in the commonwealth in 2026
+
+  va_reenactment_clause:
+    value: null
+    unit: qualitative. Even if passed in 2026, Virginia's bill would have needed a second vote in 2027
+    source: covers_2026_va
+    article: "Neighbors: Virginia's bill required a second vote, so 2026 passage would not have launched a market"
+    quotes:
+      - If passed in 2026, the legislation would have required lawmakers to approve the bill again in 2027
+      - the failure to act in 2026 had no impact on a launch timeline
+
+  # ---------------------------------------------------------------- online casino game mix (article)
+  pa_igaming_total_fy2425:
+    value: 2477083825
+    unit: USD, Pennsylvania iGaming revenue, fiscal year 2024/25
+    source: pgcb_fy2526
+    article: "Game mix: Pennsylvania online casino revenue, FY2024/25"
+    quotes:
+      - "an 18.42% increase in revenue when compared to the $2,477,083,825 generated in Fiscal Year 2024/25"
+
+  pa_igaming_mix_fy2425:
+    value: [1.8e9, 597.0e6, 29.0e6]
+    unit: >-
+      USD, Pennsylvania iGaming revenue by vertical, FY2024/25: slots (rounded to $1.8B in the
+      report), table games, poker. Slots by subtraction from the exact total: about $1.851B
+      (74.7%); tables 24.1%; poker 1.2%.
+    source: pgcb_ar_2025
+    article: "Game mix: slots are about three-quarters of Pennsylvania online casino revenue"
+    quotes:
+      - "A breakdown of revenue by three distinct gaming verticals - iSlots, iTables, and iPoker"
+      - interactive slot machine revenue increased to $1.8 billion
+      - revenue from interactive table games rose to $597 million
+      - revenue from iPoker increased slightly to $29 million
+
+  pa_live_dealer_share:
+    value: 60
+    unit: >-
+      % of Pennsylvania iTables revenue from live-dealer games, FY2024/25 ("over 60%"). Live
+      dealer is therefore at least 14.5% of all Pennsylvania iGaming revenue (0.60 x $597M /
+      $2,477M) and at most 24.1% (all table revenue): 1.9 to 3.2 times the 7.6% implied by the
+      DC CFO's FY2030 tax figures.
+    source: pgcb_ar_2025
+    article: "Op-ed: the CFO's figures imply a live-dealer share 2-3 times smaller than Pennsylvania's"
+    quotes:
+      - The iTables Live Dealer segment experienced significant growth in popularity among players throughout the fiscal year, now accounting for over 60% of total iTables revenue
+
+  # ---------------------------------------------------------------- op-ed fact check (article)
+  dc_committee_vote:
+    value: [3, 1]
+    unit: Human Services Committee vote on B26-0656, Wednesday, Nov. 18, 2026 (for, against)
+    source: covers_2026
+    article: "Op-ed: B26-0656 cleared committee Nov. 18 on a 3-1 vote"
+    quotes:
+      - The bill passed out of the Human Services Committee 3-1, with Councilmembers Wendell Felder, Matt Frumin, and Zachary Parker voting in favor
+      - Christina Henderson opposed the measure
+      - Wednesday's vote moves the legislation toward consideration by the full council
+
+  dc_unlimited_operators:
+    value: null
+    unit: qualitative. The bill sets no cap on the number of licensed operators
+    source: covers_2026
+    article: "Op-ed: the bill allows multiple operators"
+    quotes:
+      - The proposal would allow unlimited qualified online casino operators
+
+  fis_expedited_review:
+    value: null
+    unit: qualitative. Existing sports-wagering licensees get expedited review for an operator license
+    source: lims_fis_2026
+    article: "Op-ed: the bill gives sportsbook incumbents a leg up"
+    quotes:
+      - Entities that already have a valid sports wagering Class A
+      - are entitled to an expedited review
+
+  fis_player_location:
+    value: null
+    unit: >-
+      qualitative. Internet games may be offered only to players physically in DC or in another
+      jurisdiction that permits it
+    source: lims_fis_2026
+    article: "Op-ed: games are playable only in DC or other jurisdictions that permit it"
+    quotes:
+      - The bill requires internet gaming to be offered only when a player is physically located in the District (or in another jurisdiction that permits it)
+
+  reia_reciprocal_agreements:
+    value: null
+    unit: qualitative. The Mayor may sign reciprocal agreements letting players in other jurisdictions bet with DC operators
+    source: lims_reia_2026
+    article: "Op-ed: out-of-state play runs through reciprocal agreements"
+    quotes:
+      - The Mayor may enter into reciprocal agreements with other jurisdictions for internet gaming
+      - to place wagers with an operator licensed in the District
+
+  reia_revenue_from_residents:
+    value: null
+    unit: qualitative. The Council's racial equity office expects the revenue to come from DC residents' losses
+    source: lims_reia_2026
+    article: "Op-ed: most revenue would likely come from residents"
+    quotes:
+      - gambling revenue ultimately comes from District residents placing bets and losing
+
+  council_period_26:
+    value: null
+    unit: qualitative. Council Period 26 covers 2025-2026
+    source: lims_reia_2026
+    article: "Op-ed: time left in the Council period"
+    quotes:
+      - During Council Period 26 (from 2025-2026)
+
+  council_2026_remaining_meetings:
+    value: null
+    unit: >-
+      qualitative. Remaining 2026 meetings after markup: Committee of the Whole Nov. 24 (filing
+      deadline Nov. 18), legislative meeting Dec. 1, Committee of the Whole and legislative meeting
+      Dec. 15; recess Dec. 23-31
+    source: dccouncil_2026_calendar
+    article: "Op-ed: Council calendar for the rest of 2026"
+    quotes:
+      - NOVEMBER 24 (Nov. 18)
+      - DECEMBER 1 (Nov. 25
+      - DECEMBER 15 (Dec. 9)
+      - Recess - December 23 through December 31
+
+  gambetdc_sole_source:
+    value: 215.0e6
+    unit: USD, Intralot's sole-source lottery contract that included the citywide sports-betting app
+    source: dcist_2022
+    article: "Op-ed: the sports-betting operator got a sole-source, no-bid contract"
+    quotes:
+      - a $215 million sole-source contract to develop and run the only sports-betting app
+
+  intralot_settlement:
+    value: 6.5e6
+    unit: >-
+      USD, combined settlement paid by Intralot and Veterans Services Corporation to resolve the
+      Attorney General's case over DC contracting laws (no admission of wrongdoing)
+    source: wcp_2025
+    article: "Op-ed: $6.5 million settlement over charges the companies misled regulators"
+    quotes:
+      - have agreed to pay the city a combined $6.5 million to settle a case pursued by Attorney General Brian Schwalb over alleged violations of D.C. contracting laws
+      - Although the two companies do not admit wrongdoing
+      - while circumventing the District's small business contracting laws
+      - submitted more than 100 "fraudulent invoices" to city agencies by 2021
+
+  gambetdc_super_bowl_outage:
+    value: null
+    unit: qualitative. GambetDC didn't work on Apple devices for the whole 2022 Super Bowl
+    source: dcist_2022_superbowl
+    article: "Op-ed: GambetDC's operational failures"
+    quotes:
+      - did not work for users of Apple phones and tablets during the entirety of the Super Bowl
+
+  gambetdc_super_bowl_compensation:
+    value: 500000
+    unit: USD, compensation Intralot paid the DC Lottery for the Super Bowl outage
+    source: dcist_2022_compensation
+    article: "Op-ed: GambetDC's operational failures"
+    quotes:
+      - The D.C. Lottery has received $500,000 in compensation from the operator of the city's official sports-betting app
+      - criticized as clunky since it launched in mid-2020
+
+  betting_apps_perks_and_limits:
+    value: null
+    unit: >-
+      qualitative. Sports-betting apps give perks to heavy losers and cap the bets of winners
+    source: cbs_2026
+    article: "Op-ed: apps take a more predatory approach than casinos"
+    quotes:
+      - extravagant perks to customers who are losing large sums of money
+      - a tactic sports betting platforms use to apply the brakes to gamblers who are having too much success
+
+  us_igaming_states:
+    value: [7, 8]
+    unit: >-
+      US states with live / legalized real-money online casinos. Eight have legalized them; Maine
+      (January 2026) has no launch date, so seven are live
+    source: casinoorg_2026_us
+    article: "Op-ed: only seven states (with Maine set to join)"
+    quotes:
+      - Eight US states have legalized real-money online casinos
+      - Pennsylvania, Michigan, New Jersey, West Virginia, Delaware, Connecticut, Rhode Island, and Maine
+      - Maine legalized online casinos in January 2026, but there's no confirmed launch date yet
+
+  ga_chinatown_meeting:
+    value: null
+    unit: >-
+      qualitative. Tuesday 7 p.m. Gamblers Anonymous meeting at Second Baptist Church, 816 3rd St.
+      NW, near Chinatown. Listed as a closed meeting
+    source: ga_2026_dc
+    article: "Op-ed: a Gamblers Anonymous meeting in Chinatown"
+    quotes:
+      - Walkable from Chinatown and Judiciary Square Metro Stations
+      - 816 3rd St. NW
+      - Closed Meeting
+
+  dc_igaming_2012_repeal:
+    value: [10, 2]
+    unit: >-
+      DC Council vote to repeal online gambling, Feb. 7, 2012 (for repeal, against). Legalized
+      the year before in a budget bill; never launched
+    source: wtop_2012
+    article: "Op-ed: DC legalized and then repealed online gambling in 2011-12"
+    quotes:
+      - The D.C. Council voted 10-2 to repeal the nation's first government-sponsored online gambling program Tuesday
+      - Online gambling was legalized in the nation's capital last year, but the program was never implemented
+      - The program was then legalized as part of a budget bill that was approved without public comment
+
+  dc_budget_gap_fy2027:
+    value: [1.1e9, 837.0e6]
+    unit: >-
+      USD. FY2027 budget gap the Mayor's proposal closed; projected "budget cliff" the Mayor says
+      the Council's budget leaves for the next year (recurring programs funded with one-time money)
+    source: nbc4_2026_budget
+    article: "Op-ed: DC faces a budget gap of nearly $1 billion"
+    quotes:
+      - in an effort to cut costs amid a $1 billion budget gap
+      - Bowser said her proposal closed a $1.1 billion gap through spending reductions, budgetary savings and the use of prior-year surplus
+      - which she said will leave the next mayor and council with a "$837 million budget cliff."
+      - concerns over the budget funding recurring programs with one-time money
+
+  fy2027_fund_balance_use:
+    value: 597.5e6
+    unit: USD of fund balance (savings) used to balance the FY2027 local budget as proposed
+    source: ocfo_fis_fy27_budget
+    article: "Op-ed: DC is spending down savings"
+    quotes:
+      - $597.5 million of fund balance use
+
+  # ---------------------------------------------------------------- union dues (Sankey)
+  local25_dues_rate_2025:
+    value: [59.92, 105.00]
+    unit: USD per member per month, regular dues range (LM-2 item 21)
+    source: olms_local25_2025
+    quotes:
+      - PERIOD COVERED From 01/01/2025 Through 12/31/2025
+      - "FILE NUMBER: 506-434"
+      - Regular Dues/Fees $59.92-$105.00 per Member per Month
+
+  local25_dues_receipts_2025:
+    value: 7772376
+    unit: USD, dues and agency fees received in 2025 (LM-2 item 36)
+    source: olms_local25_2025
+    quotes:
+      - 36. Dues and Agency Fees $7,772,376
+
+  local25_members_2025:
+    value: 6101
+    unit: members at end of 2025 (LM-2 item 20; 0 agency fee payers)
+    source: olms_local25_2025
+    quotes:
+      - How many members did the labor organization have at the end of the reporting period? 6,101
+      - Agency Fee Payers* 0
+
+  local25_2024:
+    value: [6863160, 5349]
+    unit: 2024 dues receipts (USD) and year-end members, for consistency check
+    source: olms_local25_2024
+    quotes:
+      - PERIOD COVERED From 01/01/2024 Through 12/31/2024
+      - 36. Dues and Agency Fees $6,863,160
+      - How many members did the labor organization have at the end of the reporting period? 5,349
+
+  local25_2023:
+    value: [6324236, 4953]
+    unit: 2023 dues receipts (USD) and year-end members, for consistency check
+    source: olms_local25_2023
+    quotes:
+      - PERIOD COVERED From 01/01/2023 Through 12/31/2023
+      - 36. Dues and Agency Fees $6,324,236
+      - How many members did the labor organization have at the end of the reporting period? 4,953
+
+  # ---------------------------------------------------------------- Sankey inputs
+  iit_fy2026:
+    value: 3699357000
+    unit: USD, FY2026 DC individual income tax estimate (Table 1, $ in thousands)
+    source: ocfo_2026
+    quotes:
+      - "TABLE 1: REVENUE SUMMARY TABLE $ in Thousands ACTUAL FY2025 FY2026 FY2027 FY2028 FY2029 FY2030"
+      - Individual Income 3,605,177 3,699,357
+
+  # ---------------------------------------------------------------- tile data labels
+  baker_data:
+    value: null
+    unit: qualitative (tile label "bank transactions")
+    source: baker_2024
+    quotes:
+      - using household transaction data and a staggered difference-in-differences framework
+
+  karlsson_data:
+    value: 2099
+    unit: people with a gambling disorder diagnosis (tile label "Sweden")
+    source: karlsson_2018
+    quotes:
+      - 2,099 individuals with a GD diagnosis in the Swedish inpatient and/or outpatient specialist health care system
+
+  ct_products:
+    value: null
+    unit: qualitative (tile label "Online casino + sports betting")
+    source: ctmirror_2022
+    quotes:
+      - the launch of sports betting and online casino gambling
+
+  pa_products:
+    value: null
+    unit: qualitative (tile label "Online casino + sports betting")
+    source: psu_2026
+    quotes:
+      - sports betting companies and online casinos
+
+  # ---------------------------------------------------------------- B26-0656 committee print (primary)
+  fis_scope:
+    value: null
+    unit: which bill version the CFO's fiscal impact statement scores
+    source: lims_fis_2026
+    quotes:
+      - Draft Committee Print as provided to the Office of Revenue Analysis on November 17, 2026
+      - FY 2027- FY 2030 ($ in thousands)
+
+  fis_tax_rates:
+    value: [0.25, 0.125]
+    unit: tax rate on adjusted gross internet gaming revenue; live-dealer rate
+    source: lims_fis_2026
+    quotes:
+      - taxed at 25 percent, except for live-dealer gaming which is taxed at 12.5 percent
+
+  fis_agr_definition:
+    value: null
+    unit: definition of the tax base
+    source: lims_fis_2026
+    quotes:
+      - Adjusted gross gaming revenue is defined as gross internet gaming revenue minus winnings and cancelled, voided, or refunded wagers
+
+  print_promo_credits:
+    value: null
+    unit: promotional credits are not counted as wagers (so the tax base equals players' net cash losses)
+    source: lims_reia_2026
+    quotes:
+      - "RACIAL EQUITY IMPACT ASSESSMENT: COMMITTEE PRINT, BILL 26-0656"
+      - Total amount of money and cash equivalents wagered by patrons on internet games; provided that promotional gaming credits are not treated as wagers unless required for accounting or auditing
+
+  print_tax_rates:
+    value: [0.25, 0.125]
+    unit: same rates as stated in the committee-print assessment (cross-check)
+    source: lims_reia_2026
+    quotes:
+      - Operators must pay 25% of their adjusted gross internet gaming revenue each month, with live-dealer gross revenue taxed at 12.5%
+
+  fis_promo_cap:
+    value: 0.0175
+    unit: cap on promotional gaming credits as a share of adjusted gross revenue
+    source: lims_fis_2026
+    quotes:
+      - Promotional gaming credits, including free wagers to attract customers, may not exceed 1.75 percent of an operators adjusted gross internet gaming revenue for the fiscal year
+
+  fis_setaside:
+    value: 750000
+    unit: USD per year, first tax dollars to the Department of Behavioral Health
+    source: lims_fis_2026
+    quotes:
+      - annually the first $750,000 of tax revenue in the Fund will be transferred to the Department of Behavioral Health (DBH)
+
+  fis_community_impact:
+    value: 0.02
+    unit: community impact assessment, share of adjusted gross revenue, and its uses
+    source: lims_fis_2026
+    quotes:
+      - of two percent of adjusted gross internet gaming revenue to the District, which will also be deposited in the Fund
+      - 30 percent to DISB for debt management, financial counseling, consumer financial protection, and financial literacy programs and services
+      - 30 percent to the Office of Victim Services and Justice Grants (OVSJG), for domestic violence, intimate partner violence, survivor services, and family stability programs
+
+  fis_regulatory_assessment:
+    value: 0.02
+    unit: regulatory assessment, share of adjusted gross revenue (funds OLG regulation)
+    source: lims_fis_2026
+    quotes:
+      - of two percent of their adjusted gross internet gaming revenue to the District, to be deposited into a dedicated account in the General Fund
+      - The Regulatory Assessment will be used solely for the administration, regulation, and enforcement of the bill by OLG
+
+  fis_live_dealer_requirements:
+    value: null
+    unit: live-dealer games required and must be played in a DC studio
+    source: lims_fis_2026
+    quotes:
+      - Applicants seeking to become Operators are required to offer live-dealer games
+      - The bill requires all live-dealer games to be conducted at a physical studio in the District
+
+  fis_cbe_requirement:
+    value: 0.35
+    unit: share of DC-related operating budget to be contracted with certified local businesses (waivable)
+    source: lims_fis_2026
+    quotes:
+      - at least 35 percent of the applicant's District-related operating budget for internet gaming will be contracted with one or more CBEs
+      - If DSLBD does not deny or approve a waiver request within 30 days after submission, the waiver will be deemed approved
+
+  fis_tax_fy2030:
+    value: 16056000
+    unit: USD, FY2030 tax on gaming revenue (FY2028 15,499; FY2029 15,758; $ thousands)
+    source: lims_fis_2026
+    quotes:
+      - Tax on gaming revenue(c) $0 $15,499 $15,758 $16,056 $47,314
+
+  fis_regulatory_fy2030:
+    value: 1335000
+    unit: USD, FY2030 regulatory assessment revenue
+    source: lims_fis_2026
+    quotes:
+      - Regulatory Assessment (dedicated to OLG)(f) $0 $1,288 $1,310 $1,335 $3,932
+
+  fis_community_impact_fy2030:
+    value: 1335000
+    unit: USD, FY2030 community impact assessment revenue
+    source: lims_fis_2026
+    quotes:
+      - Dedicated Tax - Community Impact Assessment(g) $0 $1,288 $1,310 $1,335 $3,932
+
+  fis_license_fy2030:
+    value: 160000
+    unit: USD, FY2030 license fee revenue (FY2028 includes one-time operator fees of $12.3M)
+    source: lims_fis_2026
+    quotes:
+      - License Fee Revenue (b) $0 $12,320 $160 $160 $12,640
+
+  fis_lottery_loss_fy2030:
+    value: 1130000
+    unit: USD, FY2030 decrease in lottery earnings
+    source: lims_fis_2026
+    quotes:
+      - Decrease in lottery earnings(d) $0 ($1,149) ($1,139) ($1,130) ($3,417)
+      - as well as a reduction in traditional Lottery earnings
+
+  fis_sports_loss_fy2030:
+    value: 520000
+    unit: USD, FY2030 decrease in sports wagering taxes (legal age rises to 21)
+    source: lims_fis_2026
+    quotes:
+      - Decrease in sports wagering taxes(e) ($246) ($500) ($508) ($520) ($1,774)
+
+  fis_olg_costs_fy2030:
+    value: 1335000
+    unit: USD, FY2030 OLG regulatory costs
+    source: lims_fis_2026
+    quotes:
+      - OLG Regulatory Costs ($1,288) ($1,310) ($1,335) ($3,932)
+
+  fis_net_impact_fy2030:
+    value: 15901000
+    unit: USD, FY2030 net impact on District resources
+    source: lims_fis_2026
+    quotes:
+      - Net Impact on Resources ($246) $27,459 $15,580 $15,901 $58,694
+

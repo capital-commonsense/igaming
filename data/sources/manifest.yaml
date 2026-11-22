@@ -1,0 +1,421 @@
+# Source documents behind every claim in data/claims.yaml.
+#
+# Copies of each source are committed alongside this manifest under a fair-use
+# rationale (verification of quoted claims); they will be taken down promptly on any
+# DMCA or similar complaint. `sha256` pins the exact copy the claim tests were
+# written against. Re-download with
+#   uv run dc-igaming fetch-sources --force
+#
+# status: downloaded | manual
+#   manual = the publisher refuses automated downloads; save the page from a browser
+#            to `file` (HTML or PDF both work). Claim tests skip while it's missing.
+
+retrieved: 2026-11-20
+
+sources:
+  dcist_2022:
+    file: dcist_2022_lottery_app_underperforms.html
+    url: https://dcist.com/story/22/03/03/dc-lottery-app-underperforms/
+    title: D.C.'s sports betting app is still underperforming
+    publisher: DCist
+    date: 2022-03-03
+    kind: news
+    sha256: 5e1c7d020c46fc647d78296a44b99caf42718393b6d64cc94e99a804afb9d6c4
+    status: downloaded
+    short: "DCist (Mar. 3, 2022)"
+
+  casinoorg_2021:
+    file: casinoorg_2021_gambetdc_lost_4m.html
+    url: https://www.casino.org/news/controversial-dc-sport-betting-app-gambetdc-lost-4-million-last-year/
+    title: GamBetDC, Controversial Washington DC Sports Bet App, Lost $4M Last Year
+    publisher: Casino.org (citing DCist)
+    date: 2022-03
+    kind: news
+    sha256: dfc6df648f8fa7197b15ded7a9879cfde06e7e5bed4dc349e2b5971c80a1c57c
+    status: downloaded
+    short: "Casino.org, citing DCist (Mar. 2022)"
+
+  olg_fy21_22:
+    file: olg_fy21_22_oversight_presentation.pdf
+    url: https://cfo.dc.gov/sites/default/files/dc/sites/ocfo/release_content/attachments/OLG%20FY21-22%20Performance%20Oversight%20Hearing%20Presentation.pdf
+    title: Office of Lottery and Gaming, FY21-22 Performance Oversight Hearing Presentation
+    publisher: DC Office of the Chief Financial Officer
+    date: 2022-03
+    kind: government
+    sha256: 602380c971a7fe200455608acbb89995dd77c4658018913dbd3d0b82d575ef9b
+    status: downloaded
+    short: "DC Office of Lottery and Gaming, FY21-22 oversight presentation"
+
+  olg_fy22_23:
+    file: olg_fy22_23_oversight_slides.pdf
+    url: https://cfo.dc.gov/sites/default/files/dc/sites/ocfo/release_content/attachments/OLG%202022-2023%20Performance%20Oversight%20Hearing%20Testimony%20Slides.pdf
+    title: Office of Lottery and Gaming, 2022-2023 Performance Oversight Hearing Testimony Slides
+    publisher: DC Office of the Chief Financial Officer
+    date: 2023-02
+    kind: government
+    sha256: c87d68fa5fbc7577e2b41d2cf4885fa0923dfe57d17d5da1750053859a886a00
+    status: downloaded
+    short: "DC Office of Lottery and Gaming, FY22-23 oversight slides"
+
+  axios_2026:
+    file: axios_2026_dc_online_gaming.pdf
+    url: https://www.axios.com/local/washington-dc/2026/11/18/online-gaming-dc-gambling
+    title: D.C. moves to expand legal gambling with online gaming
+    publisher: Axios DC
+    date: 2026-11-18
+    kind: news
+    sha256: 8b3baea5096c21732291160fbfb3ca1c643577d10881694567bb8fb8c8bd6f47
+    status: manual  # saved from a browser as PDF (Axios blocks automated downloads)
+    short: "Axios DC (Nov. 18, 2026)"
+
+  covers_2026:
+    file: covers_2026_dc_igaming_committee.html
+    url: https://www.covers.com/industry/dc-igaming-bill-advances-council-committee-november-18-2026
+    title: DC Online Casino Bill Advances Out of Council Committee
+    publisher: Covers
+    date: 2026-11-18
+    kind: news
+    sha256: 61c8bbdf70bf820e32ce5584a849dda9b7d93f933f6b47392e5067d06a06a0bd
+    status: downloaded
+    short: "Covers (Nov. 18, 2026)"
+
+  mga_2026_sb0761:
+    file: mga_2026_sb0761.html
+    url: https://mgaleg.maryland.gov/mgawebsite/Legislation/Details/sb0761?ys=2026RS
+    title: "SB 761 (2026 session): Expansion of Commercial Gaming - Internet Gaming Referendum"
+    publisher: Maryland General Assembly, bill record
+    date: 2026-11-20
+    kind: government
+    sha256: ea522e41c21b77d8ed96de897ef4b057e469474a444a5a34715fd4e5c54118db
+    status: downloaded
+    short: "Maryland General Assembly, SB 761 (2026)"
+
+  mga_2026_hb1343:
+    file: mga_2026_hb1343.html
+    url: https://mgaleg.maryland.gov/mgawebsite/Legislation/Details/HB1343?ys=2026RS
+    title: "HB 1343 (2026 session): Internet Gaming - Authorization and Implementation"
+    publisher: >-
+      Maryland General Assembly, bill record (retrieved Nov. 20, 2026, after the session
+      ended April 13, 2026)
+    date: 2026-11-20
+    kind: government
+    sha256: a447e2e3b26091df14b259aa80182fa08420a6235e7a5d8b92a315ba52b201f5
+    status: downloaded
+    short: "Maryland General Assembly, HB 1343 (2026)"
+
+  casinoorg_2026_md:
+    file: casinoorg_2026_md_igaming_dead.html
+    url: https://www.casino.org/news/maryland-igaming-dead-2026-bill-prohibit-sweepstakes-casinos-remains/
+    title: Maryland iGaming Dead for 2026, Bill to Prohibit Sweepstakes Casinos Remains
+    publisher: Casino.org
+    date: 2026-03-24
+    kind: news
+    sha256: fa6349fa6d4e327af5b0038b9c3da968fa076bdd01a13c381e0a1e809ade479e
+    status: downloaded
+    short: "Casino.org (Mar. 24, 2026)"
+
+  covers_2026_va:
+    file: covers_2026_va_igaming_not_approved.html
+    url: https://www.covers.com/industry/virginia-online-casino-gaming-bill-not-approved-march-16-2026
+    title: Virginia Lawmakers Do Not Approve Online Casino Gaming Bill
+    publisher: >-
+      Covers. Virginia's legislative information system serves 2026 bill records only through
+      a script-driven site, so no primary record is saved.
+    date: 2026-03-16
+    kind: news
+    sha256: 6f8dcd9a3a7cc42d0e803c1b4c837d51dc51153065fdb6605e6671688bd4454e
+    status: downloaded
+    short: "Covers (Mar. 16, 2026)"
+
+  pgcb_ar_2025:
+    file: pgcb_annual_report_2024_25.pdf
+    url: https://gamingcontrolboard.pa.gov/sites/default/files/2025-09/PGCB%20Annual%20Report%202024-2025%20FINAL.pdf
+    title: Pennsylvania Gaming Control Board Annual Report, Fiscal Year 2024/2025
+    publisher: Pennsylvania Gaming Control Board
+    date: 2025-09
+    kind: government
+    sha256: 7cbaf2733aac7044f3cd6c9f17f9f46457a97fac36c8139113acdddd032f46d0
+    status: downloaded
+    short: "Pennsylvania Gaming Control Board, Annual Report FY2024/25"
+
+  pgcb_fy2526:
+    file: pgcb_fy2526_release.html
+    url: https://gamingcontrolboard.pa.gov/node/713862
+    title: Pennsylvania Gaming Control Board fiscal year 2025/26 revenue release
+    publisher: Pennsylvania Gaming Control Board
+    date: 2026-07
+    kind: government
+    sha256: 72c0164b1badd9923761da5a616285cabefb13961526de4c33d0076c5cf40dc3
+    status: downloaded
+    short: "Pennsylvania Gaming Control Board, FY2025/26 revenue release"
+
+  wcp_2025:
+    file: wcp_2025_intralot_vsc_settlement.html
+    url: https://washingtoncitypaper.com/article/756194/the-companies-behind-d-c-s-sports-betting-deal-will-pay-6-5-million-over-charges-they-misled-regulators/
+    title: "The Companies Behind D.C.'s Sports Betting Deal Will Pay $6.5 Million Over Charges They Misled Regulators"
+    publisher: "Washington City Paper"
+    date: 2025-01-14
+    kind: news
+    sha256: d61ed6f49edcac3ae292ef4e9400c5b8832d9150dfe31668528acf038fd38851
+    status: downloaded
+    short: "Washington City Paper (Jan. 14, 2025)"
+
+  cbs_2026:
+    file: cbs_2026_betting_apps_losers_winners.html
+    url: https://www.cbsnews.com/news/online-betting-apps-losers-perks-limiting-winners/
+    title: "Online betting companies lavish losers with rewards while capping winners"
+    publisher: "CBS News"
+    date: 2026-10-26
+    kind: news
+    sha256: 71f5c828ec5677d3dc450149a4ed3d465ce43b9a09b31beea20e8f909e0a1383
+    status: downloaded
+    short: "CBS News (Oct. 26, 2026)"
+
+  wtop_2012:
+    file: wtop_2012_dc_repeals_online_gambling.html
+    url: https://wtop.com/news/2012/02/curses-profanity-punctuates-dcs-repeal-of-online-gambling
+    title: "Curses! Profanity punctuates D.C.'s repeal of online gambling"
+    publisher: "WTOP"
+    date: 2012-02-07
+    kind: news
+    sha256: 714be3259b5ccf596db463ae77c663a6b78ac5d4c85f030f4f666e51fd44dcea
+    status: downloaded
+    short: "WTOP (Feb. 7, 2012)"
+
+  ocfo_fis_fy27_budget:
+    file: ocfo_2026_fis_fy2027_local_budget.pdf
+    url: https://app.cfo.dc.gov/services/fiscal_impact/pdf/spring09/FIS%20FY%202027%20Local%20Budget%20Act.pdf
+    title: "Fiscal Impact Statement - Fiscal Year 2027 Local Budget Act of 2026"
+    publisher: "DC Office of the Chief Financial Officer"
+    date: 2026-04-13
+    kind: government
+    sha256: 38e5764c85499498bc9b6e637555b1528ac1ba64e594110f1ed89d6a1a1a3b40
+    status: downloaded
+    short: "DC CFO, fiscal impact statement, FY2027 Local Budget Act (Apr. 13, 2026)"
+
+  dcist_2022_superbowl:
+    file: dcist_2022_gambetdc_super_bowl.html
+    url: https://dcist.com/story/22/02/14/dc-sports-betting-app-failed-super-bowl
+    title: "D.C.'s Troubled Sports-Betting App Didn't Work During The Super Bowl"
+    publisher: "DCist"
+    date: 2022-02-14
+    kind: news
+    sha256: d87e2882ac017d92e0be41b5588d266ba62aa8b0f7748ee22176ac41dd4b6131
+    status: downloaded
+    short: "DCist (Feb. 14, 2022)"
+
+  dcist_2022_compensation:
+    file: dcist_2022_gambetdc_compensation.html
+    url: https://dcist.com/story/22/04/08/dc-get-compensation-for-sports-betting-app-mishap
+    title: "Sports-Betting App Pays D.C. $500,000 Over Super Bowl Mishap"
+    publisher: "DCist"
+    date: 2022-04-08
+    kind: news
+    sha256: 05bed71a9ef7951e5a18ed3c99d7d10b142773e431b7097cf884204bcb6d5fb0
+    status: downloaded
+    short: "DCist (Apr. 8, 2022)"
+
+  dccouncil_2026_calendar:
+    file: dccouncil_2026_legislative_calendar.pdf
+    url: https://dccouncil.gov/wp-content/uploads/2026/01/2026-LEGISLATIVE-COW-Meetings-1-20-26.pdf
+    title: "2026 Legislative Meeting and Committee of the Whole Meeting schedule"
+    publisher: "Council of the District of Columbia"
+    date: 2026-01-20
+    kind: government
+    sha256: 740503af3ec703c35d24a16c0772167818f99b4f58155a8cca9370fe767c83d1
+    status: downloaded
+    short: "DC Council 2026 meeting schedule"
+
+  nbc4_2026_budget:
+    file: nbc4_2026_bowser_budget_fiscal_cliff.html
+    url: https://www.nbcwashington.com/news/local/bowser-refuses-to-sign-2027-budget-says-it-will-leave-city-with-fiscal-cliff/4135318/
+    title: "Bowser declines to sign budget, saying it will leave city with 'fiscal cliff'"
+    publisher: "NBC4 Washington"
+    date: 2026-07-29
+    kind: news
+    sha256: 66de9af2601a89ce917b9c4ed6e621117b0177887579a45c075aed3a4643a073
+    status: downloaded
+    short: "NBC4 Washington (July 29, 2026)"
+
+  casinoorg_2026_us:
+    file: casinoorg_2026_us_gambling.pdf
+    url: https://www.casino.org/us/gambling/
+    title: Best gambling sites in the US 2026
+    publisher: "Casino.org (page updated Nov. 16, 2026; saved from a browser Nov. 22, 2026)"
+    date: 2026-11-16
+    kind: news
+    sha256: c73db849cd59f2333ac56c3d1cb85776eef1563bfd72b9a8782ff454031d3522
+    status: manual  # Casino.org blocks automated downloads
+    short: "Casino.org (Nov. 2026)"
+
+  ga_2026_dc:
+    file: ga_2026_dc_meetings.pdf
+    url: https://gamblersanonymous.org/
+    title: "Washington D.C. G.A. - Tuesday (meeting listing)"
+    publisher: "Gamblers Anonymous meeting directory (saved from a browser Nov. 22, 2026)"
+    date: 2026-11-22
+    kind: directory
+    sha256: 0a2352661702f921b02ea3950bcf181cb22d040cc38ef0492dd9f27b5c72dc74
+    status: manual  # older GA directory URLs return 404
+    short: "Gamblers Anonymous meeting listing (Nov. 2026)"
+
+  hollenbeck_2025:
+    file: hollenbeck_2024_financial_consequences.pdf
+    url: https://assets.senate.mn/committees/2025-2026/1007_Committee_on_Finance/The-Financial-Consequences-of-Legalized-Sports-Betting.pdf
+    title: The Financial Consequences of Legalized Sports Betting (working paper, Oct. 2024)
+    publisher: >-
+      Hollenbeck, Larsen & Proserpio. October 2024 working-paper draft; the bankruptcy and
+      collections figures are from its section 4.2. Copy hosted by the Minnesota Senate Finance
+      Committee.
+    date: 2024-10
+    kind: research
+    sha256: f79b7bfcbfe7904db9044996724f0d3c764ddfd27bc9ccfeb3568c587e6f6836
+    status: downloaded
+    short: "Hollenbeck, Larsen & Proserpio, working paper (Oct. 2024)"
+
+  baker_2024:
+    file: baker_2024_nber_w33108.pdf
+    url: https://www.nber.org/system/files/working_papers/w33108/w33108.pdf
+    title: "Gambling Away Stability: Sports Betting's Impact on Vulnerable Households"
+    publisher: Baker, Balthrop, Johnson, Kotter & Pisciotta; NBER Working Paper 33108
+    date: 2024-11
+    kind: research
+    sha256: 87f73b682bad50f9a1b9fd6f30761d19c4fded39b0d3a6350c9990bd284d174d
+    status: downloaded
+    short: "Baker et al., NBER WP 33108 (2024)"
+
+  arnesen_2025:
+    file: arnesen_matsuzawa_2025_cheps.pdf
+    url: https://cheps.sdsu.edu/_resources/docs/working-papers/cheps-wp-20251001.pdf
+    title: Sports Betting Legalization Amplifies Emotional Cues & Intimate Partner Violence
+    publisher: Arnesen & Matsuzawa; CHEPS Working Paper 20251001, San Diego State University
+    date: 2025-10-30
+    kind: research
+    sha256: e35b70c87f09bc491107a061249f766df25a0cddda071436b35f14754608cbd5
+    status: downloaded
+    short: "Arnesen & Matsuzawa, CHEPS WP (2025)"
+
+  karlsson_2018:
+    file: karlsson_hakansson_2018_pmc.html
+    url: https://pmc.ncbi.nlm.nih.gov/articles/PMC6376387/
+    title: "Gambling disorder, increased mortality, suicidality, and associated comorbidity: A longitudinal nationwide register study"
+    publisher: Karlsson & Håkansson; Journal of Behavioral Addictions 7(4), 1091-1099
+    date: 2018-12
+    kind: research
+    sha256: 36616c4c4686af8cc9ebd7c8226e05f669141bf176f8df638307b166843b1df7
+    status: downloaded
+    short: "Karlsson & Håkansson, J. Behavioral Addictions (2018)"
+
+  ctmirror_2022:
+    file: ctmirror_2022_problem_gambling.html
+    url: https://ctmirror.org/2022/01/23/ct-tracks-online-gambling-closely-but-not-problem-gambling/
+    title: CT tracks online gambling closely, but not problem gambling
+    publisher: CT Mirror
+    date: 2022-01-23
+    kind: news
+    sha256: 204e136d1e97576abea97fdd9c118069e2b58e8c56822ea7c6bb774ff75a4a06
+    status: downloaded
+    short: "CT Mirror (Jan. 23, 2022)"
+
+
+  psu_2026:
+    file: psu_2025_pa_online_gambling.html
+    url: https://www.psu.edu/news/social-science-research-institute/story/online-gambling-participation-increased-pennsylvania-2025
+    title: Online gambling participation increased in Pennsylvania in 2025, report finds
+    publisher: Penn State Social Science Research Institute
+    date: 2026-01-22
+    kind: research summary
+    sha256: 614fc94c903af0b0b92bd9e2bf6a012bcf71b80f0ad9c7542ab0a1438018fbae
+    status: downloaded
+    short: "Penn State SSRI, 2025 PA online gambling report"
+
+  rutgers_2023:
+    file: rutgers_2023_nj_prevalence.pdf
+    url: https://www.nj.gov/oag/ge/2023news/PrevalenceReport2023Final.pdf
+    title: The Prevalence of Online and Land-Based Gambling in New Jersey (second report)
+    publisher: >-
+      Nower, Stanmyre & Anthony, Rutgers Center for Gambling Studies; report to the New
+      Jersey Division of Gaming Enforcement. Survey fieldwork Dec. 2020 to May 2021.
+    date: 2023
+    kind: government
+    sha256: 18ca58574b7fae7980cc6287bfd038e7b056f1b87293e59aa48296b71f63c2d4
+    status: downloaded
+    short: "Nower, Stanmyre & Anthony, Rutgers report to NJ DGE (2023)"
+
+  anj_2026:
+    file: anj_2026_excessive_gamblers_algorithm.html
+    url: https://anj.fr/algorithm-developed-anj-reveals-alarming-and-rising-number-problem-gamblers
+    title: The algorithm developed by the ANJ reveals an alarming and rising number of problem gamblers
+    publisher: Autorité nationale des jeux (France)
+    date: 2026-05
+    kind: government
+    sha256: a02bf86e18b6ec233393751a5cd42bf43332497cb563b0e7deb61a2fa7f640be
+    status: downloaded
+    short: "France ANJ (2026)"
+
+  olms_local25_2025:
+    file: olms_lm2_local25_937902.html
+    url: https://olmsapps.dol.gov/query/orgReport.do?rptId=937902&rptForm=LM2Form
+    title: UNITE HERE Local 25, Form LM-2 Labor Organization Annual Report, 2025 (file no. 506-434)
+    publisher: U.S. Department of Labor, Office of Labor-Management Standards
+    date: 2025-12-31
+    kind: government filing
+    sha256: b4a0e23dd37ab760ddeaa8887e6c7bc8f4ceed1ff99227daff5fa0f2c1aceb92
+    status: downloaded
+    short: "UNITE HERE Local 25, 2025 LM-2 filing (U.S. Dept. of Labor)"
+
+  olms_local25_2024:
+    file: olms_lm2_local25_912430.html
+    url: https://olmsapps.dol.gov/query/orgReport.do?rptId=912430&rptForm=LM2Form
+    title: UNITE HERE Local 25, Form LM-2 Labor Organization Annual Report, 2024 (file no. 506-434)
+    publisher: U.S. Department of Labor, Office of Labor-Management Standards
+    date: 2024-12-31
+    kind: government filing
+    sha256: 858921f7309e7eb34bd3c92327d27055a64ab7e6099d288d45f75e907d379601
+    status: downloaded
+    short: "UNITE HERE Local 25, 2024 LM-2 filing (U.S. Dept. of Labor)"
+
+  olms_local25_2023:
+    file: olms_lm2_local25_888264.html
+    url: https://olmsapps.dol.gov/query/orgReport.do?rptId=888264&rptForm=LM2Form
+    title: UNITE HERE Local 25, Form LM-2 Labor Organization Annual Report, 2023 (file no. 506-434)
+    publisher: U.S. Department of Labor, Office of Labor-Management Standards
+    date: 2023-12-31
+    kind: government filing
+    sha256: fdf2bdfebf57c44a57db831da588dc2ca2aff9f23ac547a12585e6c383d08112
+    status: downloaded
+    short: "UNITE HERE Local 25, 2023 LM-2 filing (U.S. Dept. of Labor)"
+
+  ocfo_2026:
+    file: ocfo_2026_june_revenue_estimate.pdf
+    url: https://cfo.dc.gov/sites/default/files/dc/sites/ocfo/publication/attachments/June%202026%20Revenue_Estimate%20Letter%20063026.pdf
+    title: June 2026 Revenue Estimates (letter to the Mayor and Council)
+    publisher: DC Office of the Chief Financial Officer
+    date: 2026-06-30
+    kind: government
+    sha256: eeeaae59fcf33e107210e29716292311865b6eea8e6f38cc46b569c3bd60f318
+    status: downloaded
+    short: "DC Office of the Chief Financial Officer, June 2026 revenue estimate"
+
+  lims_fis_2026:
+    file: lims_b26_0656_fis.pdf
+    url: https://lims.dccouncil.gov/downloads/LIMS/61620/Other/B26-0656-FIS_Internet_Gaming_and_Consumer_Protection_Act.pdf?Id=250301
+    title: Fiscal Impact Statement - Internet Gaming and Consumer Protection Act of 2026 (Bill 26-656, Draft Committee Print as provided Nov. 17, 2026)
+    publisher: DC Office of the Chief Financial Officer (via DC Council LIMS)
+    date: 2026-11-18
+    kind: government
+    sha256: 54ebc6260a1e5d9751044094629902ac99cdd5324ff293a63f2865b3e55213f3
+    status: downloaded
+    short: "DC Chief Financial Officer, fiscal impact statement on B26-0656 committee print (Nov. 18, 2026)"
+
+  lims_reia_2026:
+    file: lims_b26_0656_reia_committee_print.pdf
+    url: https://lims.dccouncil.gov/downloads/LIMS/61620/Other/B26-0656-REIA_B26-0656_Internet_Gaming_Print.pdf?Id=250282
+    title: "Racial Equity Impact Assessment: Committee Print, Bill 26-0656"
+    publisher: DC Council Office of Racial Equity (via DC Council LIMS)
+    date: 2026-11
+    kind: government
+    sha256: 49d98f83e3c83cb089364b9570a07262862592f61cba323ad7d43d54f6c9b369
+    status: downloaded
+    short: "DC Council Office of Racial Equity, assessment of B26-0656 committee print"
+
