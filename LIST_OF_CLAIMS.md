@@ -51,7 +51,6 @@ Files: `outputs/figures/follow_one_dollar_central.{svg,png}` and `_share` versio
 | Fine print: lost lottery and sports-betting revenue | $1.6M/yr (2.5¢) | CFO table, FY2030 | `scenarios.central.lottery_loss`; [`fis_lottery_loss_fy2030`](#fis_lottery_loss_fy2030); `scenarios.central.sports_wagering_loss`; [`fis_sports_loss_fy2030`](#fis_sports_loss_fy2030) |
 | Fine print: net gain | $15.9M (23.8¢) | red slices − lost revenue (the regulatory assessment and OLG costs cancel) | [`fis_net_impact_fy2030`](#fis_net_impact_fy2030) |
 | Fine print: jobs, pay, vendors | 100 jobs; $70K; $3.0M | committee estimate; assumption; assumption | `scenarios.central.jobs`; [`igaming_union_jobs`](#igaming_union_jobs), [`fis_live_dealer_requirements`](#fis_live_dealer_requirements); `scenarios.central.comp_per_job`; `scenarios.central.local_vendor_spend`; [`fis_cbe_requirement`](#fis_cbe_requirement) |
-| Fine print: income-tax equivalent | 0.43% | net gain ÷ FY2026 individual income tax | `constants.fy26_individual_income_tax`; [`iit_fy2026`](#iit_fy2026) |
 | Fine print: dues rate | $105/month ($1,260/yr); range $59.92–$105.00 | top of Local 25's reported regular dues range × 12 | [`local25_dues_rate_2025`](#local25_dues_rate_2025) |
 | Fine print: dues receipts per member | $1,274 | $7.8M ÷ 6,101 members (consistency check on the rate) | [`local25_dues_receipts_2025`](#local25_dues_receipts_2025), [`local25_members_2025`](#local25_members_2025) |
 | Fine print: total dues | $126K/yr | jobs × dues | `scenarios.central.jobs`; [`igaming_union_jobs`](#igaming_union_jobs), [`fis_live_dealer_requirements`](#fis_live_dealer_requirements); `constants.union_dues_per_member`; [`local25_dues_rate_2025`](#local25_dues_rate_2025), [`local25_dues_receipts_2025`](#local25_dues_receipts_2025), [`local25_members_2025`](#local25_members_2025) |
@@ -65,7 +64,6 @@ Files: `outputs/figures/follow_one_dollar_central.{svg,png}` and `_share` versio
 | `constants.assessment_rate` | 0.02 | share of AGR for each of the community impact and regulatory assessments | verified (primary source) | CFO fiscal impact statement on the B26-0656 committee print | [`fis_community_impact`](#fis_community_impact), [`fis_regulatory_assessment`](#fis_regulatory_assessment) |
 | `constants.treatment_setaside` | 750,000 | USD per year, first tax dollars to the Department of Behavioral Health | verified (primary source) | CFO fiscal impact statement (D.C. Official Code § 36-681.01) | [`fis_setaside`](#fis_setaside) |
 | `constants.union_dues_per_member` | 1,260 | USD per member per year | verified (primary source) | UNITE HERE Local 25 2025 Form LM-2 (DOL file no. 506-434), item 21: regular dues $59.92-$105.00 per member per month. Uses the top of the range ($105 x 12), which matches 2025 dues receipts per member ($7,772,376 / 6,101 = $1,274). | [`local25_dues_rate_2025`](#local25_dues_rate_2025), [`local25_dues_receipts_2025`](#local25_dues_receipts_2025), [`local25_members_2025`](#local25_members_2025) |
-| `constants.fy26_individual_income_tax` | 3,699,357,000 | USD, FY2026 DC individual income tax estimate | verified (primary source) | DC OCFO June 2026 revenue estimate letter, Table 1 ($ in thousands): FY2026 Individual Income 3,699,357. | [`iit_fy2026`](#iit_fy2026) |
 | `scenarios.central.tax_revenue` | 16,056,000 | USD per year, tax on gaming revenue (FY2030) | verified (primary source) | CFO fiscal impact statement, financial plan table | [`fis_tax_fy2030`](#fis_tax_fy2030) |
 | `scenarios.central.community_impact` | 1,335,000 | USD per year, community impact assessment (FY2030) | verified (primary source) | CFO fiscal impact statement, financial plan table | [`fis_community_impact_fy2030`](#fis_community_impact_fy2030) |
 | `scenarios.central.regulatory_assessment` | 1,335,000 | USD per year, regulatory assessment (FY2030) | verified (primary source) | CFO fiscal impact statement, financial plan table | [`fis_regulatory_fy2030`](#fis_regulatory_fy2030) |
@@ -733,16 +731,6 @@ Every claim in `data/claims.yaml`. The quotes are checked against the saved sour
   - “How many members did the labor organization have at the end of the reporting period? 4,953”
 - **Used in:** Cross-check only (dues per member in prior years); not displayed
 
-### iit_fy2026
-
-- **Value:** 3,699,357,000 (USD, FY2026 DC individual income tax estimate (Table 1, $ in thousands))
-- **Source:** DC Office of the Chief Financial Officer, “June 2026 Revenue Estimates (letter to the Mayor and Council)” (2026-06-30) — [https://cfo.dc.gov/sites/default/files/dc/sites/ocfo/publication/attachments/June%202026%20Revenue_Estimate%20Letter%20063026.pdf](https://cfo.dc.gov/sites/default/files/dc/sites/ocfo/publication/attachments/June%202026%20Revenue_Estimate%20Letter%20063026.pdf)
-- **Local copy:** [`data/sources/ocfo_2026_june_revenue_estimate.pdf`](data/sources/ocfo_2026_june_revenue_estimate.pdf)
-- **Verbatim quotes:**
-  - “TABLE 1: REVENUE SUMMARY TABLE $ in Thousands ACTUAL FY2025 FY2026 FY2027 FY2028 FY2029 FY2030”
-  - “Individual Income 3,605,177 3,699,357”
-- **Used in:** Sankey input `constants.fy26_individual_income_tax`
-
 ### baker_data
 
 - **Value:** n/a (qualitative) (qualitative (tile label "bank transactions"))
@@ -999,7 +987,6 @@ Every claim in `data/claims.yaml`. The quotes are checked against the saved sour
 | `olms_local25_2025` | U.S. Department of Labor, Office of Labor-Management Standards, “UNITE HERE Local 25, Form LM-2 Labor Organization Annual Report, 2025 (file no. 506-434)” (2025-12-31) | [link](https://olmsapps.dol.gov/query/orgReport.do?rptId=937902&rptForm=LM2Form) | `olms_lm2_local25_937902.html` | `b4a0e23dd37a…` | downloaded |
 | `olms_local25_2024` | U.S. Department of Labor, Office of Labor-Management Standards, “UNITE HERE Local 25, Form LM-2 Labor Organization Annual Report, 2024 (file no. 506-434)” (2024-12-31) | [link](https://olmsapps.dol.gov/query/orgReport.do?rptId=912430&rptForm=LM2Form) | `olms_lm2_local25_912430.html` | `858921f7309e…` | downloaded |
 | `olms_local25_2023` | U.S. Department of Labor, Office of Labor-Management Standards, “UNITE HERE Local 25, Form LM-2 Labor Organization Annual Report, 2023 (file no. 506-434)” (2023-12-31) | [link](https://olmsapps.dol.gov/query/orgReport.do?rptId=888264&rptForm=LM2Form) | `olms_lm2_local25_888264.html` | `fdf2bdfebf57…` | downloaded |
-| `ocfo_2026` | DC Office of the Chief Financial Officer, “June 2026 Revenue Estimates (letter to the Mayor and Council)” (2026-06-30) | [link](https://cfo.dc.gov/sites/default/files/dc/sites/ocfo/publication/attachments/June%202026%20Revenue_Estimate%20Letter%20063026.pdf) | `ocfo_2026_june_revenue_estimate.pdf` | `eeeaae59fcf3…` | downloaded |
 | `lims_fis_2026` | DC Office of the Chief Financial Officer (via DC Council LIMS), “Fiscal Impact Statement - Internet Gaming and Consumer Protection Act of 2026 (Bill 26-656, Draft Committee Print as provided Nov. 17, 2026)” (2026-11-18) | [link](https://lims.dccouncil.gov/downloads/LIMS/61620/Other/B26-0656-FIS_Internet_Gaming_and_Consumer_Protection_Act.pdf?Id=250301) | `lims_b26_0656_fis.pdf` | `54ebc6260a1e…` | downloaded |
 | `lims_reia_2026` | DC Council Office of Racial Equity (via DC Council LIMS), “Racial Equity Impact Assessment: Committee Print, Bill 26-0656” (2026-11) | [link](https://lims.dccouncil.gov/downloads/LIMS/61620/Other/B26-0656-REIA_B26-0656_Internet_Gaming_Print.pdf?Id=250282) | `lims_b26_0656_reia_committee_print.pdf` | `49d98f83e3c8…` | downloaded |
 

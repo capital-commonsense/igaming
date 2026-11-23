@@ -130,7 +130,6 @@ def test_sankey_rows_conserve_money(central):
 def test_income_tax_equivalent_uses_net_gain(central, params):
     iit = income_tax_equivalent(central, params)
     assert iit.revenue == pytest.approx(central.net_impact)
-    assert iit.pct_increase == pytest.approx(0.43, abs=0.005)
     assert iit.cents_to_dc == 100
 
 

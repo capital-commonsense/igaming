@@ -430,17 +430,6 @@ sources:
     status: downloaded
     short: "UNITE HERE Local 25, 2023 LM-2 filing (U.S. Dept. of Labor)"
 
-  ocfo_2026:
-    file: ocfo_2026_june_revenue_estimate.pdf
-    url: https://cfo.dc.gov/sites/default/files/dc/sites/ocfo/publication/attachments/June%202026%20Revenue_Estimate%20Letter%20063026.pdf
-    title: June 2026 Revenue Estimates (letter to the Mayor and Council)
-    publisher: DC Office of the Chief Financial Officer
-    date: 2026-06-30
-    kind: government
-    sha256: eeeaae59fcf33e107210e29716292311865b6eea8e6f38cc46b569c3bd60f318
-    status: downloaded
-    short: "DC Office of the Chief Financial Officer, June 2026 revenue estimate"
-
   lims_fis_2026:
     file: lims_b26_0656_fis.pdf
     url: https://lims.dccouncil.gov/downloads/LIMS/61620/Other/B26-0656-FIS_Internet_Gaming_and_Consumer_Protection_Act.pdf?Id=250301

@@ -59,15 +59,6 @@ constants:
     source: U.S. Census Bureau population estimate (rounded)
     status: reported
 
-  fy26_individual_income_tax:
-    value: 3.699357e9
-    unit: USD, FY2026 DC individual income tax estimate
-    source: >-
-      DC OCFO June 2026 revenue estimate letter, Table 1 ($ in thousands): FY2026
-      Individual Income 3,699,357.
-    status: verified
-    claims: [iit_fy2026]
-
 scenarios:
   central:
     description: >-

@@ -77,8 +77,7 @@ def one_dollar_alt(flows: Flows, iit: IncomeTaxEquivalent, text: ChartText) -> A
         f"{', '.join(s.label for s in red)}. The regulatory assessment only pays for regulating the market. "
         f"The CFO also expects the city to lose {_cents(lost)} per $1 in lottery and sports-betting revenue, "
         f"so the city nets {net:.1f} cents per $1, or {speakable(format_usd_precise(flows.net_impact))} a year. "
-        f"Beside it, a second bar shows that all of $1 paid in income tax goes to DC; raising the same "
-        f"amount through income tax would take a {iit.pct_increase:.2f}% increase. "
+        f"Beside it, a second bar shows that all of $1 paid in income tax goes to DC. "
         f"Dealer pay, vendor spending and the {flows.inputs.jobs:.0f}-job count are assumptions explained in "
         f"the fine print."
     )

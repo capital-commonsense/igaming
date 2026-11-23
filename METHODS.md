@@ -62,9 +62,7 @@ that the model rebuilds it exactly.
   exactly $1, and tests enforce this.
 
 **Income-tax comparison.** The right panel is definitional: income tax goes to DC
-directly. The fine print's "0.43% increase" is the District's net gain divided by the
-CFO's FY2026 individual income tax estimate: the across-the-board increase that would
-raise the same amount.
+directly.
 
 ## 2. Projections vs. actuals
 

@@ -47,7 +47,7 @@ def test_flow_alt_states_headline_and_every_slice(alts):
     assert "nets 24 cents" in a.short and "57 cents" in a.short
     for label in ("Out-of-state operators and suppliers", "DC general fund", "Dealers' pay", "Union dues"):
         assert label in a.full
-    assert "23.8 cents per $1" in a.full and "0.43% increase" in a.full
+    assert "23.8 cents per $1" in a.full and "0.43%" not in a.full
 
 
 def test_projections_alt_states_every_bar(alts):

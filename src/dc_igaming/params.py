@@ -34,7 +34,6 @@ CONSTANT_KEYS = (
     "treatment_setaside",
     "union_dues_per_member",
     "dc_population",
-    "fy26_individual_income_tax",
 )
 
 

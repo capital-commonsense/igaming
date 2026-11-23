@@ -595,14 +595,6 @@ claims:
       - How many members did the labor organization have at the end of the reporting period? 4,953
 
   # ---------------------------------------------------------------- Sankey inputs
-  iit_fy2026:
-    value: 3699357000
-    unit: USD, FY2026 DC individual income tax estimate (Table 1, $ in thousands)
-    source: ocfo_2026
-    quotes:
-      - "TABLE 1: REVENUE SUMMARY TABLE $ in Thousands ACTUAL FY2025 FY2026 FY2027 FY2028 FY2029 FY2030"
-      - Individual Income 3,605,177 3,699,357
-
   # ---------------------------------------------------------------- tile data labels
   baker_data:
     value: null

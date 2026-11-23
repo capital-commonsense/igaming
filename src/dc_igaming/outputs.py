@@ -67,7 +67,6 @@ def write_flow_outputs(params: ModelParams, out_dir: str | Path) -> list[Path]:
             (name, "net_losses_per_resident_usd", round(f.net_loss / pop, 2)),
             (name, "tax_per_resident_usd", round(f.tax / pop, 2)),
             (name, "net_losses_per_union_job_usd", round(f.net_loss / f.inputs.jobs)),
-            (name, "income_tax_equiv_pct", round(iit.pct_increase, 3)),
             (name, "feasible", f.feasible),
         ]
     written.append(_write(out / "flow_summary.csv", ["scenario", "metric", "value"], summary))

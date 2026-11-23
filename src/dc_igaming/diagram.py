@@ -106,15 +106,13 @@ def default_text(flows: Flows, iit: IncomeTaxEquivalent, scenario: str,
             f"{net:.1f}\u00a2 per $1.",
             f"Assumes {inp.jobs:.0f} union dealer jobs (the committee\u2019s estimate; the bill requires live-dealer "
             f"games in a DC studio) at {format_usd(inp.comp_per_job)} each, fully loaded, and "
-            f"{format_usd(inp.local_vendor_spend)} a year in DC vendor spending. Raising the same "
-            f"{format_usd_precise(flows.net_impact)} through income tax would take a {iit.pct_increase:.2f}% increase.",
+            f"{format_usd(inp.local_vendor_spend)} a year in DC vendor spending.",
             *([dues_note] if dues_note else []),
         ],
         source=(
             "Sources: DC Chief Financial Officer, fiscal impact statement on the B26-0656 committee print "
             "(Nov. 18, 2026); committee print racial equity impact assessment; committee jobs estimate via Axios DC "
-            "(Nov. 18, 2026); UNITE HERE Local 25 2025 LM-2 filing (U.S. Dept. of Labor); DC CFO June 2026 "
-            "revenue estimate."
+            "(Nov. 18, 2026); UNITE HERE Local 25 2025 LM-2 filing (U.S. Dept. of Labor)."
         ),
     )
 

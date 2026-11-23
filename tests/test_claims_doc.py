@@ -45,7 +45,7 @@ def test_every_claim_is_used_somewhere(doc):
 def test_sankey_numbers_listed(doc, central):
     for key, v in central.cents().items():
         assert format_cents(v) in doc, key
-    assert "0.43%" in doc and "$66.8M" in doc and "23.8¢" in doc
+    assert "0.43%" not in doc and "$66.8M" in doc and "23.8¢" in doc
 
 
 def test_tile_headlines_listed(doc):

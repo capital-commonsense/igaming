@@ -13,5 +13,4 @@ central,retained_cents_per_net_dollar,43.27
 central,net_losses_per_resident_usd,95.36
 central,tax_per_resident_usd,22.94
 central,net_losses_per_union_job_usd,667500
-central,income_tax_equiv_pct,0.43
 central,feasible,True

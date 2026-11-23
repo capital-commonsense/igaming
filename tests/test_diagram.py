@@ -134,7 +134,7 @@ def test_footnote_explains_accounting_and_reconciles_to_net(central, params):
     assert "red slices total 26.3¢" in note
     assert "$1.65M a year in lottery and sports-betting revenue" in note
     assert "net gain of $15.90M: 23.8¢ per $1" in note
-    assert "0.43% increase" in note
+    assert "income tax would take" not in note
     for unsourced in ("UC San Diego", "96%", "house hold", "Pennsylvania", "come out ahead", "$73"):
         assert unsourced not in note, unsourced
 

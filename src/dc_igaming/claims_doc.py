@@ -66,7 +66,6 @@ def _status_badge(p: Param) -> str:
 def sankey_rows(f: Flows, params: ModelParams, scenario: str, claims: dict[str, Claim],
                 pc: dict[str, list[str]]) -> list[Row]:
     inp = f.inputs
-    iit = income_tax_equivalent(f, params)
     c = f.cents()
     sc = f"scenarios.{scenario}"
 
@@ -136,8 +135,6 @@ def sankey_rows(f: Flows, params: ModelParams, scenario: str, claims: dict[str, 
         Row("Fine print: jobs, pay, vendors",
             f"{inp.jobs:.0f} jobs; {format_usd(inp.comp_per_job)}; {format_usd(inp.local_vendor_spend)}",
             "committee estimate; assumption; assumption", refs("jobs", "comp_per_job", "local_vendor_spend")),
-        Row("Fine print: income-tax equivalent", f"{iit.pct_increase:.2f}%",
-            "net gain \u00f7 FY2026 individual income tax", refs("fy26_individual_income_tax")),
         Row("Fine print: dues rate", f"${hi:.0f}/month (${inp.union_dues_per_member:,.0f}/yr); range ${lo:.2f}\u2013${hi:.2f}",
             "top of Local 25's reported regular dues range \u00d7 12", _ref(["local25_dues_rate_2025"])),
         Row("Fine print: dues receipts per member", f"${receipts / members:,.0f}",

@@ -259,12 +259,6 @@ def compute_flows(inp: FlowInputs, tolerance: float = 0.01) -> Flows:
 @dataclass(frozen=True)
 class IncomeTaxEquivalent:
     revenue: float
-    iit_base: float
-
-    @property
-    def pct_increase(self) -> float:
-        """Across-the-board % increase in individual income tax raising the same net revenue."""
-        return 100 * self.revenue / self.iit_base
 
     @property
     def cents_to_dc(self) -> float:
@@ -273,5 +267,5 @@ class IncomeTaxEquivalent:
 
 
 def income_tax_equivalent(flows: Flows, params: ModelParams) -> IncomeTaxEquivalent:
-    """Income-tax increase that would raise the District's *net* gain from the bill."""
-    return IncomeTaxEquivalent(flows.net_impact, params.const("fy26_individual_income_tax"))
+    """Income-tax comparison for the District's *net* gain from the bill."""
+    return IncomeTaxEquivalent(flows.net_impact)
