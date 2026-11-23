@@ -95,12 +95,12 @@ with the harm it measures (for example, "+25–30% bankruptcy risk").
   by $0.99, measured as net deposits to brokerage accounts, including robo-advisers the
   paper describes as "primarily used for long-term savings". Among financially
   constrained households, credit card debt and overdrafts rise.
-- **Partner violence:** +8.5–9.6% in reported intimate partner violence after NFL
-  home-team upset losses where sports betting is legal, the authors' controlled estimate
-  (section 5.1). The upset-loss effect is larger where betting is legal (interaction
-  significant at the 10% level), and states with mobile betting drive the result. The
-  label says "domestic violence"; intimate partner violence is one kind of domestic
-  violence.
+- **Online slots:** in the Gambling Survey for Great Britain (2023 data), the share of
+  people scoring 8 or more on the Problem Gambling Severity Index was 5.9 times as high
+  among those who played online slots in the past year as among all past-year gamblers
+  ("nearly 6 times higher than average"), shown as 5×. The Gambling Commission's follow-up
+  analysis finds the association remains significant after controlling for other gambling
+  behaviour and other factors.
 - **Suicide:** a standardized mortality ratio of 15.1 (95% interval 8.7–21.6) among
   Swedish patients aged 20–74 with diagnosed gambling disorder.
 - **France:** the ANJ's detection algorithm, covering licensed online operators and FDJ
@@ -115,10 +115,10 @@ with the harm it measures (for example, "+25–30% bankruptcy risk").
 - **Pennsylvania helpline:** more than half of calls to the state's problem-gambling
   helpline involved online gambling (Penn State).
 
-**Caveats printed on the graphic:** the findings are not DC estimates; the financial and
-NFL findings come from studies of sports betting; Connecticut launched online casino
-games and sports betting together; helpline figures measure service contacts; the New
-Jersey and Swedish results compare groups of people.
+**Caveats printed on the graphic:** the findings are not DC estimates; the financial
+findings come from studies of sports betting; Connecticut launched online casino
+games and sports betting together; helpline figures measure service contacts; the British,
+New Jersey and Swedish results compare groups of people.
 
 ## Article claims
 
@@ -139,6 +139,19 @@ Racial Equity).
 Mayor's proposal closed at $1.1 billion, and a projected $837 million "budget cliff" the
 following year from recurring programs funded with one-time money. The proposed FY2027
 budget used $597.5 million of fund balance (CFO).
+
+**Where the money goes.** In fiscal 2030 the District would collect $18.9 million from the
+bill before offsets: $16.06 million in tax, $1.335 million each from the regulatory and
+community impact assessments, and $160,000 in license fees (CFO). The committee print sends
+the tax and the community impact assessment to the Internet Gaming Revenue Fund and the
+regulatory assessment to the Lottery, Gambling, and Gaming Fund. Under D.C. Code § 36-681.01,
+the first $750,000 of tax each year goes to the Department of Behavioral Health for
+problem-gambling services, which the print limits to a contract with a third-party provider,
+and the rest of the tax goes to the local fund. The community impact assessment is split 30%
+to debt and financial counseling, 30% to domestic-violence and survivor services, 10% to
+gambling research and 30% to youth technology training. The earmarks for problem gambling,
+gambling research, domestic violence and financial counseling come to about $1.7 million, or
+9% of the total.
 
 **DC's gambling record.**
 
@@ -166,6 +179,21 @@ live dealer was 14.5% to 24.1% of all online casino revenue. The CFO's FY2030 ta
 implies a blended rate of 24.05%, or about 7.6% of revenue from live-dealer games (taxed at
 12.5%): 1.9 to 3.2 times smaller than Pennsylvania's share. At Pennsylvania's mix, DC's
 tax revenue would be about $0.6M to $1.4M a year lower than the CFO projects.
+
+**Who pays.** Gambling losses are concentrated among heavy and problem gamblers. In France,
+players flagged as likely problem gamblers (8.7% of registered players) produced 60% of
+online gambling revenue in the second half of 2025 (ANJ). In a year of British Columbia's
+provincial online casino data (30,920 accounts), the most engaged 20% of players produced
+90% of net losses and enrolled in self-exclusion at 16%, against 6% for everyone else
+(Deng, Lesch & Clark, *Addictive Behaviors*, 2021).
+
+**New Jersey's costs.** NERA Economic Consulting, in a 2023 report for the Campaign for
+Fairer Gambling, estimates that online gambling added $385 million a year in tax revenue in
+New Jersey in 2022 compared with other recreation spending, and that problem gambling linked
+to online gambling may cost the state about $350 million a year in healthcare, welfare,
+homelessness and criminal justice. It concludes that "these fiscal costs approximately offset
+the increased tax revenue." The cost figure scales UK estimates of the fiscal cost of
+problem gambling to New Jersey's gambling revenue.
 
 **Apps.** CBS News reports that sports-betting apps give extravagant perks to customers
 losing large sums and limit the bets of winners.

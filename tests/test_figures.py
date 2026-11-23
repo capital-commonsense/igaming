@@ -90,7 +90,7 @@ def harms_svg(claims, manifest):
 
 EXPECTED_HEADLINES = {
     "bankruptcy": "+25–30%", "collections": "+8%", "investment_crowd_out": "−$0.99",
-    "ipv": "+8.5–9.6%", "suicide": "15×", "anj_concentration": "60%",
+    "uk_online_slots_pgsi": "5×", "suicide": "15×", "anj_concentration": "60%",
     "nj_venue_disorder": "10×", "ct_helpline": "+87%", "pa_helpline": "50%+",
 }
 
@@ -124,10 +124,8 @@ def test_every_headline_names_its_harm(harms_svg):
         assert t.harm and t.harm in texts, t.claim
 
 
-def test_ipv_uses_controlled_estimate_not_raw_ratio(claims):
-    assert claims["ipv"].value == [8.5, 9.6]
-    ipv = next(t for t in TILES if t.claim == "ipv")
-    assert "×" not in ipv.headline(claims) and "19%" not in ipv.finding
+def test_uk_slots_ratio_rounds_down(claims):
+    assert claims["uk_online_slots_pgsi"].value == 5.9  # displayed as 5×, never 6×
 
 
 def test_title_avoids_banned_phrase():

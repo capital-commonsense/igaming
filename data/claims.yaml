@@ -112,29 +112,20 @@ claims:
     quotes:
       - credit card debt increases, available credit decreases, and overdraft frequency rises
 
-  ipv:
-    value: [8.5, 9.6]
+  uk_online_slots_pgsi:
+    value: 5.9
     unit: >-
-      % rise in reported intimate partner violence after an NFL home-team upset loss where
-      sports betting is legal (section 5.1, from the Poisson models in Table 1). The paper finds
-      the upset-loss effect is larger where betting is legal (interaction significant at the
-      10% level).
-    source: arnesen_2025
+      ratio of the share with a PGSI score of 8 or more (problem gambling) among people who played
+      online slots in the past 12 months to the share among all past-year gamblers, Great Britain,
+      2023 data. Shown as 5x (rounded down). The association remains significant after
+      controlling for other gambling behaviour and other factors (odds ratio 14.68 unadjusted,
+      3.72 adjusted)
+    source: gc_2025_pgsi_activities
     quotes:
-      - are higher when sports betting is legal (19% vs. 3.6% increase)
-      - NFL home team upset losses and reported intimate partner violence (IPV)
-      - when sports betting is legal, IPVs increase by 8.5 to 9.6%
-      - legalized gambling increases the impact of upset losses on IPV by 10 percentage points
-      - about 6 to 7 percentage points larger than in states without sports betting
-      - upset loss on IPVs by 4.1 to 6.31 percentage points
-      - states that legalized mobile betting drive our results
-
-  ipv_data:
-    value: null
-    unit: qualitative (tile label "police reports, 2011-2022")
-    source: arnesen_2025
-    quotes:
-      - 2011-2022 crime data from NIBRS
+      - Online fruit and slots 5.9
+      - For online slots, rates were nearly 6 times higher than average
+      - based on data collected in 2023
+      - "odd ratios for gambling on online fruit and slot games reduced from 14.68 (95 percent CI: 10.28-20.96) to 3.72 (95 percent CI: 2.12-6.54)"
 
   suicide:
     value: 15
@@ -279,6 +270,104 @@ claims:
     article: "Op-ed: the CFO's figures imply a live-dealer share 2-3 times smaller than Pennsylvania's"
     quotes:
       - The iTables Live Dealer segment experienced significant growth in popularity among players throughout the fiscal year, now accounting for over 60% of total iTables revenue
+
+  online_casino_concentration:
+    value: [20, 90]
+    unit: >-
+      % of online casino account holders (most engaged, by net losses) / % of net losses they
+      produced over one year, British Columbia's provincial eCasino, Oct. 2014-Sept. 2015
+      (30,920 accounts). They enrolled in self-exclusion at 16% vs. 6% for the other 80%
+    source: deng_clark_2021
+    article: "Op-ed: gambling losses are highly concentrated among problem gamblers (with France ANJ)"
+    quotes:
+      - The data contained 30,920 account holders who placed at least one bet on the platform from October 2014 to September 2015
+      - The top 20% most engaged gamblers accounted for 92% (based on total number of bets) and 90% (based on net losses) of eCasino gambling activity over the year
+      - "net losses: 16% vs 6%, respectively"
+
+  nj_igaming_costs_offset_tax:
+    value: [385.0e6, 350.0e6]
+    unit: >-
+      USD a year, New Jersey, 2022: net added tax revenue from online gambling (online casinos and
+      online sports betting) relative to other recreation spending; estimated fiscal cost of
+      problem gambling associated with online gambling (healthcare, welfare, homelessness,
+      criminal justice), scaled from UK estimates
+    source: nera_2023_nj
+    article: "Op-ed: in New Jersey, the fiscal costs of problem gambling roughly offset online gambling's added tax revenue"
+    quotes:
+      - Prepared for the Campaign for Fairer Gambling
+      - We find that there could be an additional fiscal cost of $350 million in New Jersey driven by problem gambling.
+      - This includes the costs of healthcare, welfare, homelessness, and criminal justice.
+      - These fiscal costs approximately offset the increased tax revenue collected from casinos.
+      - Total 34 42 59 117 216 335 385
+      - Applying this same ratio to the $5.2 billion in annual GGY in New Jersey suggests that there could be $740 million in social costs associated with gambling, of which $350 million may be associated with iGambling in particular.
+      - the fiscal social cost of problem gambling in New Jersey is roughly equal to the added tax contribution from the industry
+
+  dc_gross_revenue_fy2030:
+    value: 18.886e6
+    unit: >-
+      USD, District revenue from the bill in fiscal 2030 before offsets: license fees $160K + tax
+      $16,056K + regulatory assessment $1,335K + community impact assessment $1,335K. Shown as
+      "$19 million". Net of lost lottery and sports-wagering revenue it is $17.2M, and net of
+      regulatory costs $15.9M
+    source: lims_fis_2026
+    article: "Op-ed: the city's estimated $19 million of annual revenue"
+    quotes:
+      - License Fee Revenue (b) $0 $12,320 $160 $160 $12,640
+      - revenue(c) $0 $15,499 $15,758 $16,056 $47,314
+      - (dedicated to OLG)(f) $0 $1,288 $1,310 $1,335 $3,932
+      - Assessment(g) $0 $1,288 $1,310 $1,335 $3,932
+      - ($ in thousands)
+
+  igaming_fund_tax_earmark:
+    value: 750000
+    unit: >-
+      USD a year: the first $750,000 of internet gaming tax revenue goes to the Department of
+      Behavioral Health for problem-gambling services; the rest goes to the District's local
+      fund. A flat amount, not a share of revenue
+    source: dccode_36_681_01
+    article: "Op-ed: a small portion of revenue funds programs for gambling addicts"
+    quotes:
+      - Beginning in Fiscal Year 2027, and each year thereafter, money in the Fund shall be used as follows
+      - The first $750,000 of tax revenue collected shall be transferred to the Department of Behavioral Health for prevention, education, treatment, referral, and recovery services related to gambling addiction and related behavioral health needs
+      - All remaining tax revenue shall be transferred to the local fund of the District of Columbia
+
+  igaming_fund_community_impact_split:
+    value: [30, 30, 10, 30]
+    unit: >-
+      % of the 2% community impact assessment: debt and financial counseling (DISB); domestic
+      violence and survivor services (OVSJG); gambling research (DC Health); youth technology
+      training (DOES)
+    source: dccode_36_681_01
+    article: "Op-ed: a small portion of revenue funds programs for domestic-violence victims and financial counseling"
+    quotes:
+      - Revenue received from the community impact assessments shall be transferred annually to the following agencies for the following purposes
+      - 30% to the Department of Insurance, Securities, and Banking, for debt management, financial counseling, consumer financial protection, and financial literacy programs and services
+      - 30% to the Office of Victim Services and Justice Grants, for domestic violence, intimate partner violence, survivor services, and family stability programs
+      - 10% to the Department of Health, for research and evaluation services on gambling behavior and gambling addiction
+      - 30% to the Department of Employment Services, for youth development and training programs related to artificial intelligence, gaming, coding and software development, and related technology fields
+
+  print_revenue_routing:
+    value: [0.25, 0.125, 0.02, 0.02]
+    unit: >-
+      tax rate, live-dealer tax rate, regulatory assessment, community impact assessment (shares
+      of adjusted gross internet gaming revenue). Tax and community impact assessment go to the
+      Internet Gaming Revenue Fund; the regulatory assessment goes to the Lottery, Gambling, and
+      Gaming Fund. The Behavioral Health money may only fund a contract with a third-party
+      problem-gambling provider
+    source: lims_print_2026
+    article: "Op-ed: how the bill routes its taxes and assessments"
+    quotes:
+      - Committee on Human Services
+      - November 18, 2026
+      - Pay to the Office of Tax and Revenue an amount equal to 25% of the operator's
+      - revenue shall be taxed at rate of 12.5%.
+      - District a regulatory assessment, separate from the tax imposed under section 515 of this title,
+      - equal to 2% of the operator's adjusted gross internet gaming revenue for the preceding calendar
+      - and Gaming Fund established by section 4 of the Law to Legalize Lotteries, Daily Numbers
+      - title, in an amount equal to 2% of the operator's adjusted gross internet gaming revenue for the
+      - Revenue Fund, established under section 2292 of the Fiscal Year 2027 Budget Support Act of
+      - Official Code § 36-681.01) may only support a contract with a third-party provider to deliver
+      - "problem-gambling related services to the District, including: education, prevention, crisis"
 
   # ---------------------------------------------------------------- op-ed fact check (article)
   dc_committee_vote:

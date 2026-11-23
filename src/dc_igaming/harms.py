@@ -68,12 +68,11 @@ TILES: tuple[Tile, ...] = (
          "investment/savings",
          "for every $1 bet on sports online. Among strapped households, card debt and overdrafts rise",
          "Online sports betting · bank transactions", extra_claims=("constrained_households", "baker_data")),
-    # Row 2: violence, health, concentration
-    Tile("ipv", lambda c: f"+{c['ipv'].value[0]:g}–{c['ipv'].value[1]:g}%",
-         "domestic violence",
-         "where sports betting is legal, in reported partner violence after NFL home-team upsets: a "
-         "bigger spike than where betting isn't legal",
-         "Sports betting · police reports, 2011–2022", extra_claims=("ipv_data",)),
+    # Row 2: product risk, health, concentration
+    Tile("uk_online_slots_pgsi", lambda c: f"{int(c['uk_online_slots_pgsi'].value)}×",
+         "problem-gambling rate",
+         "among people who played online slots in the past year vs. all gamblers in Great Britain",
+         "Association · Great Britain, 2023 survey"),
     Tile("suicide", lambda c: f"{c['suicide'].value:.0f}×",
          "suicide mortality",
          "vs. the general population, among Swedish patients aged 20–74 with diagnosed gambling disorder",
@@ -98,7 +97,7 @@ TILES: tuple[Tile, ...] = (
          "Online casino + sports betting · Pennsylvania", extra_claims=("pa_products",)),
 )
 
-ROW_LABELS = ("Money", "Violence, health and who pays", "Problem gambling")
+ROW_LABELS = ("Money", "Risk, health and who pays", "Problem gambling")
 
 
 def render_harms_svg(claims: dict[str, Claim], sources: dict[str, Source],
@@ -146,10 +145,10 @@ def render_harms_svg(claims: dict[str, Claim], sources: dict[str, Source],
         y += tile_h
 
     notes = [
-        "None of these are DC estimates. The financial and NFL findings cover sports betting; few studies "
+        "None of these are DC estimates. The financial findings cover sports betting; few studies "
         "isolate online casino games. Connecticut launched online casino games and sports betting together. "
-        "Helpline figures measure service contacts. The New Jersey and Swedish results compare groups of "
-        "people and do not show that gambling caused the differences.",
+        "Helpline figures measure service contacts. The British, New Jersey and Swedish results compare "
+        "groups of people and do not show that gambling caused the differences.",
         "Sources as cited in each panel.",
     ]
     foot, end_y = footer(notes, y + 10, mx, width - 2 * mx, theme)

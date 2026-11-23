@@ -110,16 +110,16 @@ Files: `outputs/figures/research_findings.{svg,png}` and `_share` versions. Code
 | +25–30% | at the high end, three to four years after a state's online sports betting launch | Online sports betting · ~7M consumers | Hollenbeck, Larsen & Proserpio, working paper (Oct. 2024) | [`bankruptcy`](#bankruptcy), [`hollenbeck_sample`](#hollenbeck_sample) |
 | +8% | approximate rise in the average amount owed after online sports betting became legal | Online sports betting · ~7M consumers | Hollenbeck, Larsen & Proserpio, working paper (Oct. 2024) | [`collections`](#collections), [`hollenbeck_sample`](#hollenbeck_sample) |
 | −$0.99 | for every $1 bet on sports online. Among strapped households, card debt and overdrafts rise | Online sports betting · bank transactions | Baker et al., NBER WP 33108 (2024) | [`investment_crowd_out`](#investment_crowd_out), [`constrained_households`](#constrained_households), [`baker_data`](#baker_data) |
-| +8.5–9.6% | where sports betting is legal, in reported partner violence after NFL home-team upsets: a bigger spike than where betting isn't legal | Sports betting · police reports, 2011–2022 | Arnesen & Matsuzawa, CHEPS WP (2025) | [`ipv`](#ipv), [`ipv_data`](#ipv_data) |
+| 5× | among people who played online slots in the past year vs. all gamblers in Great Britain | Association · Great Britain, 2023 survey | UK Gambling Commission (2025) | [`uk_online_slots_pgsi`](#uk_online_slots_pgsi) |
 | 15× | vs. the general population, among Swedish patients aged 20–74 with diagnosed gambling disorder | Association · Swedish clinical cohort | Karlsson & Håkansson, J. Behavioral Addictions (2018) | [`suicide`](#suicide), [`karlsson_data`](#karlsson_data) |
 | 60% | of French online and account-based gambling revenue came from the 8.7% of players flagged as likely problem gamblers | Online + account-based gambling · France, H2 2025 | France ANJ (2026) | [`anj_concentration`](#anj_concentration) |
 | 10× | among New Jersey gamblers who bet only online (11.3%) vs. only in person (1.1%) | Association · New Jersey, 2020–21 survey | Nower, Stanmyre & Anthony, Rutgers report to NJ DGE (2023) | [`nj_venue_disorder`](#nj_venue_disorder), [`nj_survey_dates`](#nj_survey_dates) |
 | +87% | and texts to Connecticut's problem-gambling helpline, Nov. 2021 vs. Nov. 2020 | Online casino + sports betting · Connecticut | CT Mirror (Jan. 23, 2022) | [`ct_helpline`](#ct_helpline), [`ct_products`](#ct_products) |
 | 50%+ | of calls to Pennsylvania's problem-gambling helpline involved problematic online gambling | Online casino + sports betting · Pennsylvania | Penn State SSRI, 2025 PA online gambling report | [`pa_helpline`](#pa_helpline), [`pa_products`](#pa_products) |
 
-Each headline is a number plus the harm it measures, set under the number in bold serif. Derived headlines: `10×` is 11.3% ÷ 1.1% (New Jersey, Table 28), rounded *down* from 10.3 so it never overstates. `+87%` is (583 − 311) ÷ 311, also rounded down. `+25–30%` is the high end the October 2024 draft reports (“as much as”), and the tile says so. `+8.5–9.6%` is the authors' controlled estimate of the rise in partner violence after an upset loss where betting is legal (section 5.1). The paper finds that effect is larger where betting is legal (interaction significant at the 10% level). The label says “domestic violence”; the paper measures intimate partner violence, a subset, and the finding text says “partner violence”. `+8%` (“roughly” in the source, “approximate” on the tile), `−$0.99`, `15×`, `60%` and `50%+` restate the quoted figures directly.
+Each headline is a number plus the harm it measures, set under the number in bold serif. Derived headlines: `10×` is 11.3% ÷ 1.1% (New Jersey, Table 28), rounded *down* from 10.3 so it never overstates. `+87%` is (583 − 311) ÷ 311, also rounded down. `+25–30%` is the high end the October 2024 draft reports (“as much as”), and the tile says so. `5×` is the Gambling Commission's ratio of 5.9 for online slots, rounded down. `+8%` (“roughly” in the source, “approximate” on the tile), `−$0.99`, `15×`, `60%` and `50%+` restate the quoted figures directly.
 
-Fine-print caveats on the graphic: none of these are DC estimates; the financial and NFL findings cover sports betting, and few studies isolate online casino games; Connecticut launched online casino games and sports betting together; helpline figures measure service contacts; the New Jersey and Swedish results compare groups of people and do not show that gambling caused the differences.
+Fine-print caveats on the graphic: none of these are DC estimates; the financial findings cover sports betting, and few studies isolate online casino games; Connecticut launched online casino games and sports betting together; helpline figures measure service contacts; the British, New Jersey and Swedish results compare groups of people and do not show that gambling caused the differences.
 
 ## 4. Claim register
 
@@ -256,29 +256,17 @@ Every claim in `data/claims.yaml`. The quotes are checked against the saved sour
   - “credit card debt increases, available credit decreases, and overdraft frequency rises”
 - **Used in:** Research findings tile `investment_crowd_out` (text/label)
 
-### ipv
+### uk_online_slots_pgsi
 
-- **Value:** 8.5, 9.6 (% rise in reported intimate partner violence after an NFL home-team upset loss where sports betting is legal (section 5.1, from the Poisson models in Table 1). The paper finds the upset-loss effect is larger where betting is legal (interaction significant at the 10% level).)
-- **Source:** Arnesen & Matsuzawa; CHEPS Working Paper 20251001, San Diego State University, “Sports Betting Legalization Amplifies Emotional Cues & Intimate Partner Violence” (2025-10-30) — [https://cheps.sdsu.edu/_resources/docs/working-papers/cheps-wp-20251001.pdf](https://cheps.sdsu.edu/_resources/docs/working-papers/cheps-wp-20251001.pdf)
-- **Local copy:** [`data/sources/arnesen_matsuzawa_2025_cheps.pdf`](data/sources/arnesen_matsuzawa_2025_cheps.pdf)
+- **Value:** 5.9 (ratio of the share with a PGSI score of 8 or more (problem gambling) among people who played online slots in the past 12 months to the share among all past-year gamblers, Great Britain, 2023 data. Shown as 5x (rounded down). The association remains significant after controlling for other gambling behaviour and other factors (odds ratio 14.68 unadjusted, 3.72 adjusted))
+- **Source:** UK Gambling Commission (Gambling Survey for Great Britain, 2023 data; published Jan. 30, 2025, updated Feb. 6, 2025), “Exploring the relationship between gambling activities and Problem Gambling Severity Index (PGSI) scores” (2025-01-30) — [https://www.gamblingcommission.gov.uk/report/exploring-the-relationship-between-gambling-activities-and-problem-gambling](https://www.gamblingcommission.gov.uk/report/exploring-the-relationship-between-gambling-activities-and-problem-gambling)
+- **Local copy:** [`data/sources/gc_2025_pgsi_by_activity.html`](data/sources/gc_2025_pgsi_by_activity.html)
 - **Verbatim quotes:**
-  - “are higher when sports betting is legal (19% vs. 3.6% increase)”
-  - “NFL home team upset losses and reported intimate partner violence (IPV)”
-  - “when sports betting is legal, IPVs increase by 8.5 to 9.6%”
-  - “legalized gambling increases the impact of upset losses on IPV by 10 percentage points”
-  - “about 6 to 7 percentage points larger than in states without sports betting”
-  - “upset loss on IPVs by 4.1 to 6.31 percentage points”
-  - “states that legalized mobile betting drive our results”
-- **Used in:** Research findings tile `ipv` (headline)
-
-### ipv_data
-
-- **Value:** n/a (qualitative) (qualitative (tile label "police reports, 2011-2022"))
-- **Source:** Arnesen & Matsuzawa; CHEPS Working Paper 20251001, San Diego State University, “Sports Betting Legalization Amplifies Emotional Cues & Intimate Partner Violence” (2025-10-30) — [https://cheps.sdsu.edu/_resources/docs/working-papers/cheps-wp-20251001.pdf](https://cheps.sdsu.edu/_resources/docs/working-papers/cheps-wp-20251001.pdf)
-- **Local copy:** [`data/sources/arnesen_matsuzawa_2025_cheps.pdf`](data/sources/arnesen_matsuzawa_2025_cheps.pdf)
-- **Verbatim quotes:**
-  - “2011-2022 crime data from NIBRS”
-- **Used in:** Research findings tile `ipv` (text/label)
+  - “Online fruit and slots 5.9”
+  - “For online slots, rates were nearly 6 times higher than average”
+  - “based on data collected in 2023”
+  - “odd ratios for gambling on online fruit and slot games reduced from 14.68 (95 percent CI: 10.28-20.96) to 3.72 (95 percent CI: 2.12-6.54)”
+- **Used in:** Research findings tile `uk_online_slots_pgsi` (headline)
 
 ### suicide
 
@@ -427,6 +415,88 @@ Every claim in `data/claims.yaml`. The quotes are checked against the saved sour
 - **Verbatim quotes:**
   - “The iTables Live Dealer segment experienced significant growth in popularity among players throughout the fiscal year, now accounting for over 60% of total iTables revenue”
 - **Used in:** Article text: Op-ed: the CFO's figures imply a live-dealer share 2-3 times smaller than Pennsylvania's
+
+### online_casino_concentration
+
+- **Value:** 20, 90 (% of online casino account holders (most engaged, by net losses) / % of net losses they produced over one year, British Columbia's provincial eCasino, Oct. 2014-Sept. 2015 (30,920 accounts). They enrolled in self-exclusion at 16% vs. 6% for the other 80%)
+- **Source:** Deng, Lesch & Clark, Addictive Behaviors (2021); author accepted manuscript, UBC Centre for Gambling Research, “Pareto Distributions in Online Casino Gambling: Sensitivity to Timeframe and Associations with Self Exclusion” (2021) — [https://gamblingresearch.sites.olt.ubc.ca/files/2021/05/Deng_Clark_AddictiveBehaviors_AAM.pdf](https://gamblingresearch.sites.olt.ubc.ca/files/2021/05/Deng_Clark_AddictiveBehaviors_AAM.pdf)
+- **Local copy:** [`data/sources/deng_lesch_clark_2021_pareto_ecasino.pdf`](data/sources/deng_lesch_clark_2021_pareto_ecasino.pdf)
+- **Verbatim quotes:**
+  - “The data contained 30,920 account holders who placed at least one bet on the platform from October 2014 to September 2015”
+  - “The top 20% most engaged gamblers accounted for 92% (based on total number of bets) and 90% (based on net losses) of eCasino gambling activity over the year”
+  - “net losses: 16% vs 6%, respectively”
+- **Used in:** Article text: Op-ed: gambling losses are highly concentrated among problem gamblers (with France ANJ)
+
+### nj_igaming_costs_offset_tax
+
+- **Value:** 385,000,000, 350,000,000 (USD a year, New Jersey, 2022: net added tax revenue from online gambling (online casinos and online sports betting) relative to other recreation spending; estimated fiscal cost of problem gambling associated with online gambling (healthcare, welfare, homelessness, criminal justice), scaled from UK estimates)
+- **Source:** NERA Economic Consulting, prepared for the Campaign for Fairer Gambling, “Economic Assessment of iGambling in New Jersey” (2023-11-09) — [https://cdn.sanity.io/files/42ezp3kj/production/4c7a2a180f457cc28703f796274a43a7f9731b7f.pdf](https://cdn.sanity.io/files/42ezp3kj/production/4c7a2a180f457cc28703f796274a43a7f9731b7f.pdf)
+- **Local copy:** [`data/sources/nera_2023_nj_igambling.pdf`](data/sources/nera_2023_nj_igambling.pdf)
+- **Verbatim quotes:**
+  - “Prepared for the Campaign for Fairer Gambling”
+  - “We find that there could be an additional fiscal cost of $350 million in New Jersey driven by problem gambling.”
+  - “This includes the costs of healthcare, welfare, homelessness, and criminal justice.”
+  - “These fiscal costs approximately offset the increased tax revenue collected from casinos.”
+  - “Total 34 42 59 117 216 335 385”
+  - “Applying this same ratio to the $5.2 billion in annual GGY in New Jersey suggests that there could be $740 million in social costs associated with gambling, of which $350 million may be associated with iGambling in particular.”
+  - “the fiscal social cost of problem gambling in New Jersey is roughly equal to the added tax contribution from the industry”
+- **Used in:** Article text: Op-ed: in New Jersey, the fiscal costs of problem gambling roughly offset online gambling's added tax revenue
+
+### dc_gross_revenue_fy2030
+
+- **Value:** 18,886,000 (USD, District revenue from the bill in fiscal 2030 before offsets: license fees $160K + tax $16,056K + regulatory assessment $1,335K + community impact assessment $1,335K. Shown as "$19 million". Net of lost lottery and sports-wagering revenue it is $17.2M, and net of regulatory costs $15.9M)
+- **Source:** DC Office of the Chief Financial Officer (via DC Council LIMS), “Fiscal Impact Statement - Internet Gaming and Consumer Protection Act of 2026 (Bill 26-656, Draft Committee Print as provided Nov. 17, 2026)” (2026-11-18) — [https://lims.dccouncil.gov/downloads/LIMS/61620/Other/B26-0656-FIS_Internet_Gaming_and_Consumer_Protection_Act.pdf?Id=250301](https://lims.dccouncil.gov/downloads/LIMS/61620/Other/B26-0656-FIS_Internet_Gaming_and_Consumer_Protection_Act.pdf?Id=250301)
+- **Local copy:** [`data/sources/lims_b26_0656_fis.pdf`](data/sources/lims_b26_0656_fis.pdf)
+- **Verbatim quotes:**
+  - “License Fee Revenue (b) $0 $12,320 $160 $160 $12,640”
+  - “revenue(c) $0 $15,499 $15,758 $16,056 $47,314”
+  - “(dedicated to OLG)(f) $0 $1,288 $1,310 $1,335 $3,932”
+  - “Assessment(g) $0 $1,288 $1,310 $1,335 $3,932”
+  - “($ in thousands)”
+- **Used in:** Article text: Op-ed: the city's estimated $19 million of annual revenue
+
+### igaming_fund_tax_earmark
+
+- **Value:** 750,000 (USD a year: the first $750,000 of internet gaming tax revenue goes to the Department of Behavioral Health for problem-gambling services; the rest goes to the District's local fund. A flat amount, not a share of revenue)
+- **Source:** Council of the District of Columbia, D.C. Law Library (D.C. Law 26-189, § 2292), “D.C. Code § 36-681.01. Internet Gaming Revenue Fund” (2026-10-02) — [https://code.dccouncil.gov/us/dc/council/code/sections/36-681.01](https://code.dccouncil.gov/us/dc/council/code/sections/36-681.01)
+- **Local copy:** [`data/sources/dccode_36-681.01_internet_gaming_revenue_fund.html`](data/sources/dccode_36-681.01_internet_gaming_revenue_fund.html)
+- **Verbatim quotes:**
+  - “Beginning in Fiscal Year 2027, and each year thereafter, money in the Fund shall be used as follows”
+  - “The first $750,000 of tax revenue collected shall be transferred to the Department of Behavioral Health for prevention, education, treatment, referral, and recovery services related to gambling addiction and related behavioral health needs”
+  - “All remaining tax revenue shall be transferred to the local fund of the District of Columbia”
+- **Used in:** Article text: Op-ed: a small portion of revenue funds programs for gambling addicts
+
+### igaming_fund_community_impact_split
+
+- **Value:** 30, 30, 10, 30 (% of the 2% community impact assessment: debt and financial counseling (DISB); domestic violence and survivor services (OVSJG); gambling research (DC Health); youth technology training (DOES))
+- **Source:** Council of the District of Columbia, D.C. Law Library (D.C. Law 26-189, § 2292), “D.C. Code § 36-681.01. Internet Gaming Revenue Fund” (2026-10-02) — [https://code.dccouncil.gov/us/dc/council/code/sections/36-681.01](https://code.dccouncil.gov/us/dc/council/code/sections/36-681.01)
+- **Local copy:** [`data/sources/dccode_36-681.01_internet_gaming_revenue_fund.html`](data/sources/dccode_36-681.01_internet_gaming_revenue_fund.html)
+- **Verbatim quotes:**
+  - “Revenue received from the community impact assessments shall be transferred annually to the following agencies for the following purposes”
+  - “30% to the Department of Insurance, Securities, and Banking, for debt management, financial counseling, consumer financial protection, and financial literacy programs and services”
+  - “30% to the Office of Victim Services and Justice Grants, for domestic violence, intimate partner violence, survivor services, and family stability programs”
+  - “10% to the Department of Health, for research and evaluation services on gambling behavior and gambling addiction”
+  - “30% to the Department of Employment Services, for youth development and training programs related to artificial intelligence, gaming, coding and software development, and related technology fields”
+- **Used in:** Article text: Op-ed: a small portion of revenue funds programs for domestic-violence victims and financial counseling
+
+### print_revenue_routing
+
+- **Value:** 0.25, 0.125, 0.02, 0.02 (tax rate, live-dealer tax rate, regulatory assessment, community impact assessment (shares of adjusted gross internet gaming revenue). Tax and community impact assessment go to the Internet Gaming Revenue Fund; the regulatory assessment goes to the Lottery, Gambling, and Gaming Fund. The Behavioral Health money may only fund a contract with a third-party problem-gambling provider)
+- **Source:** DC Council Committee on Human Services (via DC Council LIMS), “Bill 26-0656 Committee Print (Committee on Human Services, Nov. 18, 2026)” (2026-11-18) — [https://lims.dccouncil.gov/downloads/LIMS/61620/Committee_Print/B26-0656-Committee_Print1.pdf?Id=250445](https://lims.dccouncil.gov/downloads/LIMS/61620/Committee_Print/B26-0656-Committee_Print1.pdf?Id=250445)
+- **Local copy:** [`data/sources/lims_b26_0656_committee_print.pdf`](data/sources/lims_b26_0656_committee_print.pdf)
+- **Verbatim quotes:**
+  - “Committee on Human Services”
+  - “November 18, 2026”
+  - “Pay to the Office of Tax and Revenue an amount equal to 25% of the operator's”
+  - “revenue shall be taxed at rate of 12.5%.”
+  - “District a regulatory assessment, separate from the tax imposed under section 515 of this title,”
+  - “equal to 2% of the operator's adjusted gross internet gaming revenue for the preceding calendar”
+  - “and Gaming Fund established by section 4 of the Law to Legalize Lotteries, Daily Numbers”
+  - “title, in an amount equal to 2% of the operator's adjusted gross internet gaming revenue for the”
+  - “Revenue Fund, established under section 2292 of the Fiscal Year 2027 Budget Support Act of”
+  - “Official Code § 36-681.01) may only support a contract with a third-party provider to deliver”
+  - “problem-gambling related services to the District, including: education, prevention, crisis”
+- **Used in:** Article text: Op-ed: how the bill routes its taxes and assessments
 
 ### dc_committee_vote
 
@@ -914,9 +984,13 @@ Every claim in `data/claims.yaml`. The quotes are checked against the saved sour
 | `nbc4_2026_budget` | NBC4 Washington, “Bowser declines to sign budget, saying it will leave city with 'fiscal cliff'” (2026-07-29) | [link](https://www.nbcwashington.com/news/local/bowser-refuses-to-sign-2027-budget-says-it-will-leave-city-with-fiscal-cliff/4135318/) | `nbc4_2026_bowser_budget_fiscal_cliff.html` | `66de9af2601a…` | downloaded |
 | `casinoorg_2026_us` | Casino.org (page updated Nov. 16, 2026; saved from a browser Nov. 22, 2026), “Best gambling sites in the US 2026” (2026-11-16) | [link](https://www.casino.org/us/gambling/) | `casinoorg_2026_us_gambling.pdf` | `c73db849cd59…` | manual |
 | `ga_2026_dc` | Gamblers Anonymous meeting directory (saved from a browser Nov. 22, 2026), “Washington D.C. G.A. - Tuesday (meeting listing)” (2026-11-22) | [link](https://gamblersanonymous.org/) | `ga_2026_dc_meetings.pdf` | `0a2352661702…` | manual |
+| `gc_2025_pgsi_activities` | UK Gambling Commission (Gambling Survey for Great Britain, 2023 data; published Jan. 30, 2025, updated Feb. 6, 2025), “Exploring the relationship between gambling activities and Problem Gambling Severity Index (PGSI) scores” (2025-01-30) | [link](https://www.gamblingcommission.gov.uk/report/exploring-the-relationship-between-gambling-activities-and-problem-gambling) | `gc_2025_pgsi_by_activity.html` | `dd64757b7a37…` | downloaded |
+| `deng_clark_2021` | Deng, Lesch & Clark, Addictive Behaviors (2021); author accepted manuscript, UBC Centre for Gambling Research, “Pareto Distributions in Online Casino Gambling: Sensitivity to Timeframe and Associations with Self Exclusion” (2021) | [link](https://gamblingresearch.sites.olt.ubc.ca/files/2021/05/Deng_Clark_AddictiveBehaviors_AAM.pdf) | `deng_lesch_clark_2021_pareto_ecasino.pdf` | `1371d2b492b1…` | downloaded |
+| `nera_2023_nj` | NERA Economic Consulting, prepared for the Campaign for Fairer Gambling, “Economic Assessment of iGambling in New Jersey” (2023-11-09) | [link](https://cdn.sanity.io/files/42ezp3kj/production/4c7a2a180f457cc28703f796274a43a7f9731b7f.pdf) | `nera_2023_nj_igambling.pdf` | `74f00ba6d5b8…` | downloaded |
+| `lims_print_2026` | DC Council Committee on Human Services (via DC Council LIMS), “Bill 26-0656 Committee Print (Committee on Human Services, Nov. 18, 2026)” (2026-11-18) | [link](https://lims.dccouncil.gov/downloads/LIMS/61620/Committee_Print/B26-0656-Committee_Print1.pdf?Id=250445) | `lims_b26_0656_committee_print.pdf` | `2de5b9068c16…` | downloaded |
+| `dccode_36_681_01` | Council of the District of Columbia, D.C. Law Library (D.C. Law 26-189, § 2292), “D.C. Code § 36-681.01. Internet Gaming Revenue Fund” (2026-10-02) | [link](https://code.dccouncil.gov/us/dc/council/code/sections/36-681.01) | `dccode_36-681.01_internet_gaming_revenue_fund.html` | `6e2b5dbaaa54…` | downloaded |
 | `hollenbeck_2025` | Hollenbeck, Larsen & Proserpio. October 2024 working-paper draft; the bankruptcy and collections figures are from its section 4.2. Copy hosted by the Minnesota Senate Finance Committee., “The Financial Consequences of Legalized Sports Betting (working paper, Oct. 2024)” (2024-10) | [link](https://assets.senate.mn/committees/2025-2026/1007_Committee_on_Finance/The-Financial-Consequences-of-Legalized-Sports-Betting.pdf) | `hollenbeck_2024_financial_consequences.pdf` | `f79b7bfcbfe7…` | downloaded |
 | `baker_2024` | Baker, Balthrop, Johnson, Kotter & Pisciotta; NBER Working Paper 33108, “Gambling Away Stability: Sports Betting's Impact on Vulnerable Households” (2024-11) | [link](https://www.nber.org/system/files/working_papers/w33108/w33108.pdf) | `baker_2024_nber_w33108.pdf` | `87f73b682bad…` | downloaded |
-| `arnesen_2025` | Arnesen & Matsuzawa; CHEPS Working Paper 20251001, San Diego State University, “Sports Betting Legalization Amplifies Emotional Cues & Intimate Partner Violence” (2025-10-30) | [link](https://cheps.sdsu.edu/_resources/docs/working-papers/cheps-wp-20251001.pdf) | `arnesen_matsuzawa_2025_cheps.pdf` | `e35b70c87f09…` | downloaded |
 | `karlsson_2018` | Karlsson & Håkansson; Journal of Behavioral Addictions 7(4), 1091-1099, “Gambling disorder, increased mortality, suicidality, and associated comorbidity: A longitudinal nationwide register study” (2018-12) | [link](https://pmc.ncbi.nlm.nih.gov/articles/PMC6376387/) | `karlsson_hakansson_2018_pmc.html` | `36616c4c4686…` | downloaded |
 | `ctmirror_2022` | CT Mirror, “CT tracks online gambling closely, but not problem gambling” (2022-01-23) | [link](https://ctmirror.org/2022/01/23/ct-tracks-online-gambling-closely-but-not-problem-gambling/) | `ctmirror_2022_problem_gambling.html` | `204e136d1e97…` | downloaded |
 | `psu_2026` | Penn State Social Science Research Institute, “Online gambling participation increased in Pennsylvania in 2025, report finds” (2026-01-22) | [link](https://www.psu.edu/news/social-science-research-institute/story/online-gambling-participation-increased-pennsylvania-2025) | `psu_2025_pa_online_gambling.html` | `614fc94c903a…` | downloaded |

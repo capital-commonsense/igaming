@@ -307,17 +307,15 @@ def render_claims_doc(params: ModelParams, raw_params: dict, claims: dict[str, C
       "Derived headlines: `10\u00d7` is 11.3% \u00f7 1.1% (New Jersey, Table 28), rounded *down* from 10.3 so "
       "it never overstates. "
       "`+87%` is (583 \u2212 311) \u00f7 311, also rounded down. `+25\u201330%` is the high end the October "
-      "2024 draft reports (\u201cas much as\u201d), and the tile says so. `+8.5\u20139.6%` is the authors' controlled estimate of the rise in partner violence after an "
-      "upset loss where betting is legal (section 5.1). The paper finds that effect is larger where betting is "
-      "legal (interaction significant at the 10% level). The label says \u201cdomestic violence\u201d; the paper measures intimate partner violence, a "
-      "subset, and the finding text says \u201cpartner violence\u201d. `+8%` (\u201croughly\u201d in the "
+      "2024 draft reports (\u201cas much as\u201d), and the tile says so. `5\u00d7` is the Gambling Commission's ratio of 5.9 for online slots, rounded down. "
+      "`+8%` (\u201croughly\u201d in the "
       "source, \u201capproximate\u201d on the tile), `\u2212$0.99`, `15\u00d7`, `60%` and `50%+` restate the "
       "quoted figures directly.")
     a("")
-    a("Fine-print caveats on the graphic: none of these are DC estimates; the financial and NFL findings "
+    a("Fine-print caveats on the graphic: none of these are DC estimates; the financial findings "
       "cover sports betting, and few studies isolate online casino games; Connecticut launched online casino "
-      "games and sports betting together; helpline figures measure service contacts; the New Jersey and "
-      "Swedish results compare groups of people and do not show that gambling caused the differences.")
+      "games and sports betting together; helpline figures measure service contacts; the British, New Jersey "
+      "and Swedish results compare groups of people and do not show that gambling caused the differences.")
     a("")
 
     # ---- Claim register

@@ -120,7 +120,7 @@ def harms_alt(claims: dict[str, Claim]) -> AltText:
     lo, hi = claims["bankruptcy"].value
     short = (
         f"Nine research findings on mobile gambling, led by bankruptcy risk up {lo:.0f} to {hi:.0f}% after "
-        "online sports betting became legal. Others cover debt, savings, domestic violence, suicide and "
+        "online sports betting became legal. Others cover debt, savings, online slots, suicide and "
         "problem gambling."
     )
     rows = []
@@ -131,9 +131,9 @@ def harms_alt(claims: dict[str, Claim]) -> AltText:
         rows.append(f"{label}: " + "; ".join(items) + ".")
     full = (
         f"{TITLE}. {SUBTITLE}. A grid of nine findings in three rows. " + " ".join(rows) + " "
-        "None of these are DC estimates. The financial and NFL findings cover sports betting; few studies "
-        "isolate online casino games. The New Jersey and Swedish results compare groups of people and do "
-        "not show that gambling caused the differences."
+        "None of these are DC estimates. The financial findings cover sports betting; few studies "
+        "isolate online casino games. The British, New Jersey and Swedish results compare groups of people "
+        "and do not show that gambling caused the differences."
     )
     return _check(AltText(speakable(short), speakable(full)))
 

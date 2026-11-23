@@ -119,3 +119,14 @@ def test_pa_live_dealer_share_vs_cfo_implied(params):
     dc = compute_flows(FlowInputs.from_scenario(params, "central")).live_dealer_share
     assert dc == pytest.approx(0.0757, abs=0.0005)
     assert round(floor / dc, 1) == 1.9 and round(ceiling / dc, 1) == 3.2
+
+
+def test_dc_gross_revenue_and_earmarks():
+    """$19M gross take in FY2030; the community impact split covers 100%; earmarks are a small share."""
+    assert sum([160e3, 16_056e3, 1_335e3, 1_335e3]) == CLAIMS["dc_gross_revenue_fy2030"].value
+    assert round(CLAIMS["dc_gross_revenue_fy2030"].value / 1e6) == 19
+    split = CLAIMS["igaming_fund_community_impact_split"].value
+    assert sum(split) == 100
+    # addiction services + research + domestic violence + financial counseling, as a share of the gross take
+    named = CLAIMS["igaming_fund_tax_earmark"].value + 1_335e3 * (split[0] + split[1] + split[2]) / 100
+    assert named / CLAIMS["dc_gross_revenue_fy2030"].value == pytest.approx(0.089, abs=0.001)

@@ -259,6 +259,61 @@ sources:
     status: manual  # older GA directory URLs return 404
     short: "Gamblers Anonymous meeting listing (Nov. 2026)"
 
+  gc_2025_pgsi_activities:
+    file: gc_2025_pgsi_by_activity.html
+    url: https://www.gamblingcommission.gov.uk/report/exploring-the-relationship-between-gambling-activities-and-problem-gambling
+    title: "Exploring the relationship between gambling activities and Problem Gambling Severity Index (PGSI) scores"
+    publisher: "UK Gambling Commission (Gambling Survey for Great Britain, 2023 data; published Jan. 30, 2025, updated Feb. 6, 2025)"
+    date: 2025-01-30
+    kind: government
+    sha256: dd64757b7a378aeedd845d67be172dd983939b0f31d51da9ed3e8b40cece5f57
+    status: downloaded
+    short: "UK Gambling Commission (2025)"
+
+  deng_clark_2021:
+    file: deng_lesch_clark_2021_pareto_ecasino.pdf
+    url: https://gamblingresearch.sites.olt.ubc.ca/files/2021/05/Deng_Clark_AddictiveBehaviors_AAM.pdf
+    title: "Pareto Distributions in Online Casino Gambling: Sensitivity to Timeframe and Associations with Self Exclusion"
+    publisher: "Deng, Lesch & Clark, Addictive Behaviors (2021); author accepted manuscript, UBC Centre for Gambling Research"
+    date: 2021
+    kind: research
+    sha256: 1371d2b492b1098ddaaeb530c138c2eab8dd28a2ac1f16f141836dbd4af90c10
+    status: downloaded
+    short: "Deng, Lesch & Clark, Addictive Behaviors (2021)"
+
+  nera_2023_nj:
+    file: nera_2023_nj_igambling.pdf
+    url: https://cdn.sanity.io/files/42ezp3kj/production/4c7a2a180f457cc28703f796274a43a7f9731b7f.pdf
+    title: "Economic Assessment of iGambling in New Jersey"
+    publisher: "NERA Economic Consulting, prepared for the Campaign for Fairer Gambling"
+    date: 2023-11-09
+    kind: research
+    sha256: 74f00ba6d5b8895f3698d97048eb480061806d586eef35e0ec57ffc608453ee7
+    status: downloaded
+    short: "NERA Economic Consulting for the Campaign for Fairer Gambling (2023)"
+
+  lims_print_2026:
+    file: lims_b26_0656_committee_print.pdf
+    url: https://lims.dccouncil.gov/downloads/LIMS/61620/Committee_Print/B26-0656-Committee_Print1.pdf?Id=250445
+    title: "Bill 26-0656 Committee Print (Committee on Human Services, Nov. 18, 2026)"
+    publisher: "DC Council Committee on Human Services (via DC Council LIMS)"
+    date: 2026-11-18
+    kind: government
+    sha256: 2de5b9068c16e7e61ca4a251f8a091711cfd8b2baf355a78087cbec032b66ba6
+    status: downloaded
+    short: "DC Council, B26-0656 committee print (Nov. 18, 2026)"
+
+  dccode_36_681_01:
+    file: dccode_36-681.01_internet_gaming_revenue_fund.html
+    url: https://code.dccouncil.gov/us/dc/council/code/sections/36-681.01
+    title: "D.C. Code § 36-681.01. Internet Gaming Revenue Fund"
+    publisher: "Council of the District of Columbia, D.C. Law Library (D.C. Law 26-189, § 2292)"
+    date: 2026-10-02
+    kind: government
+    sha256: 6e2b5dbaaa5423683c803efbad8116d694a300cbdd43d9060ecdcf6061521712
+    status: downloaded
+    short: "D.C. Code § 36-681.01 (FY2027 Budget Support Act, § 2292)"
+
   hollenbeck_2025:
     file: hollenbeck_2024_financial_consequences.pdf
     url: https://assets.senate.mn/committees/2025-2026/1007_Committee_on_Finance/The-Financial-Consequences-of-Legalized-Sports-Betting.pdf
@@ -283,17 +338,6 @@ sources:
     sha256: 87f73b682bad50f9a1b9fd6f30761d19c4fded39b0d3a6350c9990bd284d174d
     status: downloaded
     short: "Baker et al., NBER WP 33108 (2024)"
-
-  arnesen_2025:
-    file: arnesen_matsuzawa_2025_cheps.pdf
-    url: https://cheps.sdsu.edu/_resources/docs/working-papers/cheps-wp-20251001.pdf
-    title: Sports Betting Legalization Amplifies Emotional Cues & Intimate Partner Violence
-    publisher: Arnesen & Matsuzawa; CHEPS Working Paper 20251001, San Diego State University
-    date: 2025-10-30
-    kind: research
-    sha256: e35b70c87f09bc491107a061249f766df25a0cddda071436b35f14754608cbd5
-    status: downloaded
-    short: "Arnesen & Matsuzawa, CHEPS WP (2025)"
 
   karlsson_2018:
     file: karlsson_hakansson_2018_pmc.html
